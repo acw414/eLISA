@@ -3,7 +3,7 @@
 Welcome to xxxxx, written by Anna Weir and Sohil Joshi. 
 
 
-~introduction, background, justificaton for project~
+*introduction, background, justificaton for project*
 
 This program will take a taxonomy file from an eDNA sample as the input, as well as the country or regional area the samples were collected from. The file should species split on different rows, and the number of occurrences at each sampling site in the columns.  This program will extract the species, run them through originr, and determine whether the species are invasive or not in the country specified in the input. The program will then list the percentage of species that were invasive for each sample site, as well as text detailing the names of each invasive species and some information about where they’re native to. 
 
