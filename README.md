@@ -4,9 +4,9 @@ Welcome to xxxxx, written by Anna Weir and Sohil Joshi.
 
 *introduction, background, justificaton for project*
 
-This project primarily uses data from Environmental DNA (eDNA), which is the genetic material that organisms shed into the environment around them, similar to how humans shed hair and skin cells throughout the day. This genetic material provides us insight into the past and present as it identifies all species that have passed through a particular area through analyzing samples of water, soil, sediment etc. 
-This process can be done by first collecting samples, extracting and purifying the DNA, and then amplifying it through a technique known as PCR. This method is advantageous as it is more efficient that conducting observations/trapping, and also does a quantitative analysis which aids in population count.
-eDNA can be used to track the spread of invasive species, which are species that have been introduced, either intentionally or unintentionally, to a region outside their natural range and subsequently caused harm to this new habitat. This is a worthwhile field of study as population booms of invasive species could threaten native species, disrupt ecosystem functions, and even cause millions of dollars worth of damage. 
+This project primarily uses data from Environmental DNA (eDNA), which is the genetic material that organisms shed into the environment around them, similar to how humans shed hair and skin cells throughout the day. This genetic material provides us insight into the past and present as it identifies all species that have passed through a particular area through analyzing samples of water, soil, sediment etc.   
+This process can be done by first collecting samples, extracting and purifying the DNA, and then amplifying it through a technique known as [PCR](https://www.yourgenome.org/facts/what-is-pcr-polymerase-chain-reaction). This method is advantageous as it is more efficient that conducting observations/trapping, and also does a quantitative analysis which aids in population count.   
+eDNA can be used to track the spread of invasive species, which are species that have been introduced, either intentionally or unintentionally, to a region outside their natural range and subsequently caused harm to this new habitat. This is a worthwhile field of study as population booms of invasive species could threaten native species, disrupt ecosystem functions, and even cause millions of dollars worth of damage.   
 
 Purpose of program:
 
