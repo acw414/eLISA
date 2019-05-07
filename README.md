@@ -10,6 +10,7 @@ This program will take a taxonomy file from an eDNA sample as the input, as well
 
 
 ```
+INSTRUCTIONS FOR README:
 The name of the program
 Choose a self-explaining name for your project.
 
