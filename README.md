@@ -6,6 +6,8 @@ This is our program
 
 By the end of the day, you will have a repository with a name, the names of the authors, and an introduction that introduces the project, justifies its existence, and provides a rough description of the steps required to take an input dataset and transform it to the desired output dataset.
 
+This program will take a taxonomy file from an eDNA sample as the input. The file should have 
+
 ```
 The name of the program
 Choose a self-explaining name for your project.
