@@ -1,6 +1,8 @@
 # README
 
+Welcome to xxxxx, written by 
 
+This is our program
 The name of the program
 Choose a self-explaining name for your project.
 
