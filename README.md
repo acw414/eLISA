@@ -6,7 +6,8 @@ This is our program
 
 By the end of the day, you will have a repository with a name, the names of the authors, and an introduction that introduces the project, justifies its existence, and provides a rough description of the steps required to take an input dataset and transform it to the desired output dataset.
 
-This program will take a taxonomy file from an eDNA sample as the input. The file should have 
+This program will take a taxonomy file from an eDNA sample as the input, as well as the country or regional area the samples were collected from. The file should species split on different rows, and the number of occurrences at each sampling site in the columns.  This program will extract the species, run them through originr, and determine whether the species are invasive or not in the country specified in the input. The program will then list the percentage of species that were invasive for each sample site, as well as text detailing the names of each invasive species and some information about where they’re native to. 
+
 
 ```
 The name of the program
