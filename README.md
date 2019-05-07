@@ -12,7 +12,7 @@ eDNA can be used to track the spread of invasive species, which are species that
 
 The program is designed to make it convenient for biologist to sort through multiple invasive species datasets to retrieve information. The user will be able to identify which species amongst all those present in their eDNA sample are invasive to the sampled area. Additionally, the program will then list the percentage of species that were invasive for each sample site, as well as text detailing the names of each invasive species and some information about where they’re native to. 
 
-**What user needs installed/dataset:**
+**What the user needs installed and dataset format:**
 
 The user will need to install R - a statistical programming and visualization tool. The user will need to install the [originr](https://github.com/ropensci/originr) package. 
 
