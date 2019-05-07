@@ -1,6 +1,6 @@
 # README
 
-Welcome to xxxxx, written by 
+Welcome to xxxxx, written by Anna Weir and Sohil Joshi. 
 
 This is our program
 
