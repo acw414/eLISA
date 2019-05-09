@@ -26,5 +26,5 @@ with open(inputfile, "r") as my_file:
 			if there is no white space after the last ;:
 				counter_columnnumber = counter_columnnumber + 1
 				split the line at the last ;
-				grab the last item in the line (the species name) in columnheader.txt
+				grab the last item in the line (the species name) >> columnheader.txt
 
