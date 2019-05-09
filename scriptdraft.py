@@ -17,7 +17,7 @@ inputfile = sys.argv[1]
 open(unusable.txt,"w+")
 
 with open(inputfile, "r") as my_file:
-	for each column after the first (not including the last one):
+	for all columns after the first (not including the last one):
 		counter_columnnumber = 0
 		make a temporary file called columnheader.txt
 		go down each column and if it comes across a value != 0:
@@ -26,7 +26,5 @@ with open(inputfile, "r") as my_file:
 			if there is no white space after the last ;:
 				counter_columnnumber = counter_columnnumber + 1
 				split the line at the last ;
-				grab the last item in the line (the species name)
-				save the speies in the temporary file for that line
-
+				grab the last item in the line (the species name) in columnheader.txt
 
