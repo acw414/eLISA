@@ -3,7 +3,7 @@
 ```
 This script takes an eDNA output file (with columns of different locations and taxonomy information in the last one), and will extract the species name (if applicable)
 
-Usage = python2 scriptdraft.py inputfile 
+Usage = python2 scriptdraft.py inputfile  
 
 ```
 
