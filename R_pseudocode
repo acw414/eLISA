@@ -3,6 +3,11 @@ install.packages("originr")
 library("originr")
 
 eol()
-flora_europaea()
+
 gisd()
-is_native()
+
+is_native():
+if (region == "america")
+  True
+if (region == "europe") 
+  print("dataset only for america")
