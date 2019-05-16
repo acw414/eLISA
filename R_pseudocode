@@ -29,3 +29,5 @@ then mark species as foreign
 percent_invasive = (invasive/total)*100
 print "percent_invasive\% of species in this sample are invasive"
 
+for species marked as invasive:
+print native_range
