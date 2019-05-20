@@ -1,0 +1,19 @@
+#Usage = python2 scriptdraft.py inputfile  
+
+import re
+import string 
+import sys
+import os
+
+inputfile = sys.argv[1]
+
+for line in inputfile:
+A=stripline()
+splite.line()
+element=splot.a(\t)
+if elementlist[0] == 0:
+        masterlist.append[-1]
+else:
+        masterlost2.appemd[-1]
+for i in inputfile[:-1]:
+        print "hello"
