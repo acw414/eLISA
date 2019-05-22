@@ -1,5 +1,7 @@
 #!/usr/bin/python2
 
+#draft script due in Thurs discussion. Will take fish taxonomy input file and output species from each sample in a list
+
 #This script takes an eDNA output file (with columns of different locations and taxonomy information in the last one), and will extract the species name (if applicable)
 
 #Usage = python2 scriptdraft.py inputfile  
