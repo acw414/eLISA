@@ -20,5 +20,6 @@ for line in openfile:
                 Elementlist = line.split(';')[-1] #split the line at the last ;      
                 sample1.append(Elementlist) #append this to the list sample1 (in line 13)
                 outputCG.write(Elementlist) #write elementlist to the temp file outputCG. idk how this is different ot the line above or why u write Elementlist and not sample1?? idk confusing
-
+#need to work out how to do this for all columns in a doc, each creating a new file called sample1 sample2 etc.
+#and yeah mauybe we dont need to do the count for Thurs, i can do that after
 outputCG.close()
