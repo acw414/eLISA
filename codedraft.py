@@ -2,7 +2,7 @@
 
 #This script takes an eDNA output file (with columns of different locations and taxonomy information in the last one), and will extract the species name (if applicable)
 
-#Usage = python2 scriptdraft.py inputfile  
+#Usage = python2 codedraft.py inputfile  
 
 import re
 import string 
@@ -23,3 +23,6 @@ for line in openfile:
 #need to work out how to do this for all columns in a doc, each creating a new file called sample1 sample2 etc.
 #and yeah mauybe we dont need to do the count for Thurs, i can do that after
 outputCG.close()
+
+#need to find a way to remove instances of duplication in output file
+#need to assign the specific sample name to the output file row1, not the entire 1st line from input file

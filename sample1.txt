@@ -1,0 +1,11 @@
+12S_seq_number	X12S_first1000reads.LSC.A.1.S19.L001	X12S_first1000reads.LSC.A.2.S20.L001	sum taxonomy
+Oplegnathus woodwardi
+Hypsypops rubicundus
+Hypsypops rubicundus
+
+Sphyraena helleri
+Oxyjulis californica
+Engraulis mordax
+Girella simplicidens
+Semicossyphus pulcher
+Rhacochilus vacca
