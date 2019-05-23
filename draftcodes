@@ -1,0 +1,6 @@
+#isolating the header
+
+with open(inputfile, "r") as f:
+        h = f.readline()
+        header = h.split("\t")
+print header
