@@ -2,7 +2,8 @@
 
 #This script takes an eDNA output file (with columns of different locations and taxonomy information in the last one), and will extract the species name (if applicable)
 
-#Usage = python2 codedraft.py inputfile
+#Usage = python2 codedraft.py inputfile 
+#we are using Fish_taxonomy_file.txt as inputfile
 
 import re
 import string
