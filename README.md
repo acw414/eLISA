@@ -26,7 +26,7 @@ Add:
   format of the file   
   requirements that the user needs on the bioinformatics end   
 put more comments in the code itself   
-- importing/lodint things   
+- importing/loadingnt things   
 - providing the inpiut    
 printing an error message if they dont have the right arguments   
 another error message if its not tab delimited or doesnt have semicolons   
