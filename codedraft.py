@@ -12,7 +12,7 @@ import os
 inputfile = sys.argv[1]
 sample1 = []
 openfile = open(inputfile, "r")
-outputCG=open("sample1.txt", "w")
+outputCG= open("sample1.txt", "w")
 for line in openfile:   
         Line = line.strip()     
         Col = line.split("\t")
