@@ -14,7 +14,7 @@ The program is designed to make it convenient for biologist to sort through mult
 
 **What the user needs installed and dataset format:**
 
-The user will need to install R - a statistical programming and visualization tool. The user will need to install the [originr](https://github.com/ropensci/originr) package. The user will need to use UCLA's Hoffman server to perform computations.
+The user will need to install R - a statistical programming and visualization tool. The user will need to install the [originr](https://github.com/ropensci/originr) package. The user will need to use UCLA's Hoffman server to perform computations. Once logged in, the user will need to load Python and R modules. 
 
 This program will take a taxonomy file from an eDNA sample as the input, as well as the country or regional area the samples were collected from. The file should split species in different rows, and the number of occurrences at each sampling site in the columns. This program will extract the species, compare them to multiple datasets using originr, and determine whether the species are invasive or not in the country specified in the input. The program also returns other statistics depending on the parameters included by the user.
 
@@ -22,10 +22,12 @@ THINGS TO DO
 Add:    
   things the user should know in advance:    
      
-  also if you need to do module load something    
-  format of the file   
-  requirements that the user needs on the bioinformatics end   
-put more comments in the code itself   
+  
+  -format of the file   
+  -requirements that the user needs on the bioinformatics end 
+  
+put more comments in the code itself:
+
 - importing/loadingnt things   
 - providing the inpiut    
 printing an error message if they dont have the right arguments   
