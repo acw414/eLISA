@@ -18,21 +18,24 @@ The user will need to install R - a statistical programming and visualization to
 
 This program will take a taxonomy file from an eDNA sample as the input, as well as the country or regional area the samples were collected from. The file should split species in different rows, and the number of occurrences at each sampling site in the columns. This program will extract the species, compare them to multiple datasets using originr, and determine whether the species are invasive or not in the country specified in the input. The program also returns other statistics depending on the parameters included by the user.
 
-THINGS TO DO . 
-Add:  
-  things the user should know in advance:  
-  should be in hoffman.  
-  also if you need to do module load something . 
-  format of the file . 
-  requirements that the user needs on the bioinformatics end . 
-put more comments in the code itself . 
-- importing/lodint things . 
-- providing the inpiut . 
-printing an error message if they dont have the right arguments . 
-another error message if its not tab delimited or doesnt have semicolons . 
-- if the last column is just commas: say it has to be semicolons . 
-to skup the 1st line . 
-do an if statement, if line not in uniq 1 and line >1 (or zero): do . 
-do an if statmenet . 
-if line = 0, split line by tabs, and write the 1st element . 
-else, (if not the 1st line), do the repeating thing . 
+THINGS TO DO   
+Add:    
+  things the user should know in advance:    
+  should be in hoffman   
+  also if you need to do module load something    
+  format of the file   
+  requirements that the user needs on the bioinformatics end   
+put more comments in the code itself   
+- importing/lodint things   
+- providing the inpiut    
+printing an error message if they dont have the right arguments   
+another error message if its not tab delimited or doesnt have semicolons   
+- if the last column is just commas: say it has to be semicolons  
+to skip the 1st line  
+do an if statement, if line not in uniq 1 and line >1 (or zero): do   
+do an if statmenet   
+if line = 0, split line by tabs, and write the 1st element   
+else, (if not the 1st line), do the repeating thing    
+print the len of every single line. see how it works   
+use header as a reference - for i in len(elementds in header)   
+make a count of all species  + make the list of the unusable species
