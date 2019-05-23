@@ -38,14 +38,13 @@ for line in open("s1temp.txt", "r"):
                 unique1.add(line)
                 
 outfile1.close()
-
 os.remove("s1temp.txt")
+
 unique2 = set() # holds unique species in sample 2
 outfile2 = open("sample2.txt", "w")
 for line in open("s2temp.txt", "r"):
         if line not in unique2: #if the species is not a duplicate
                 outfile2.write(line)
                 unique2.add(line)
-os.remove("s2temp.txt")
-
 outfile2.close()
+os.remove("s2temp.txt")
