@@ -23,6 +23,6 @@ for line in openfile:
 #need to work out how to do this for all columns in a doc, each creating a new file called sample1 sample2 etc.
 #and yeah mauybe we dont need to do the count for Thurs, i can do that after
 outputCG.close()
-
+#below -just some notes while I'm problem-solving 
 #need to find a way to remove instances of duplication in output file
 #need to assign the specific sample name to the output file row1, not the entire 1st line from input file
