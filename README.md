@@ -21,18 +21,14 @@ This program will take a taxonomy file from an eDNA sample as the input, as well
 THINGS TO DO   
 Add:    
   things the user should know in advance:    
-     
-  
-  -format of the file   
-  -requirements that the user needs on the bioinformatics end 
-  
-put more comments in the code itself:
-
-- importing/loadingnt things   
-- providing the inpiut    
-printing an error message if they dont have the right arguments   
-another error message if its not tab delimited or doesnt have semicolons   
-- if the last column is just commas: say it has to be semicolons  
+  - format of the file   
+  - requirements that the user needs on the bioinformatics end   
+  - more comments in the code itself   
+  - add comments to bit saying you're mporting/loading things   
+  - printing an error message if they dont have:
+    - the right arguments   
+    - if the input is not tab delimited or doesnt use semicolons as delimeters in the last column
+    
 to skip the 1st line  
 do an if statement, if line not in uniq 1 and line >1 (or zero): do   
 do an if statmenet   
