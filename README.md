@@ -20,7 +20,7 @@ This program will take a taxonomy file from an eDNA sample as the input, as well
 
 THINGS TO DO   
 Add:    
-  things the user should know in advance:    
+  - things the user should know in advance - hoffman/originr (to the readme)    
   - format of the file   
   - requirements that the user needs on the bioinformatics end   
   - more comments in the code itself   
