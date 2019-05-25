@@ -18,8 +18,7 @@ The user will need to install R - a statistical programming and visualization to
 
 This program will take a taxonomy file from an eDNA sample as the input, as well as the country or regional area the samples were collected from. The file should split species in different rows, and the number of occurrences at each sampling site in the columns. This program will extract the species, compare them to multiple datasets using originr, and determine whether the species are invasive or not in the country specified in the input. The program also returns other statistics depending on the parameters included by the user.
 
-THINGS TO DO   
-Add:    
+***THINGS TO ADD***
   - things the user should know in advance - hoffman/originr (to the readme)    
   - format of the file   
   - requirements that the user needs on the bioinformatics end   
