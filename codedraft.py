@@ -1,8 +1,8 @@
 #!/usr/bin/python2
 
-#This script takes the Fish_taxonomy_file.txt, and will output a text file per sample location containing all the species sampled there (with no repeats)
+#This script takes an eDNA output file (with columns of different locations and taxonomy information in the last one), and will extract the species name (if applicable)
 
-#Usage = python2 codedraft.py Fish_taxonomy_file.txt
+#Usage = python2 codedraft.py inputfile
 
 import re
 import string
@@ -11,40 +11,66 @@ import os
 
 inputfile = sys.argv[1]
 openfile = open(inputfile, "r")
-sample1 = []
-sample2 = []
-output1 = open("s1temp.txt", "w")
-output2 = open("s2temp.txt", "w")
+
+#This works out the number of columns in the input file
+
+with open(inputfile, "r") as f:
+        h = f.readline()
+        header = h.split("\t")
+        headlen = len(header)
+        colrange = range(1,headlen - 1)
+
+masterlist = [0]
+
+for x in colrange:
+        masterlist.append(header[x])
+
+openfile.readline() #skips the 1st line
 for line in openfile:
-        Line = line.strip()
+        line = line.strip()
         Col = line.split("\t")
-        if Col[1] != "0" and len(Col) >3: #if the item in the 2nd column does not equal 0 and the number of columns is > 3
-                Elementlist = line.split(';')[-1] #split the line at the last ;
-                sample1.append(Elementlist)
-                output1.write(Elementlist)
-        if Col[2] != "0" and len(Col) >3:
-                Element_list = line.split(';')[-1]
-                sample2.append(Element_list)
-                output2.write(Element_list)
+        if len(Col) == headlen:
+                for x in colrange:
+                        if len(Col) == headlen:
+                                if Col[x] != "0":
+                                        sp = line.split(';')[-1]
+                                        masterlist[x] =  masterlist[x] + ';' + sp
+for i in colrange:
+        filename = "column" + str(i) + ".txt"
+        with open(filename, 'w') as output:
+                output.write(masterlist[i])
 
-output1.close()
-output2.close()
+# Puts each species on seperate lines; removes any repeats
 
-unique1 = set() # holds unique species in sample 1
-outfile1 = open("sample1.txt", "w")
-for line in open("s1temp.txt", "r"):
-        if line not in unique1: #if the species is not a duplicate
-                outfile1.write(line)
-                unique1.add(line)
-                
-outfile1.close()
-os.remove("s1temp.txt")
+path = os.listdir('.')
 
-unique2 = set() # holds unique species in sample 2
-outfile2 = open("sample2.txt", "w")
-for line in open("s2temp.txt", "r"):
-        if line not in unique2: #if the species is not a duplicate
-                outfile2.write(line)
-                unique2.add(line)
-outfile2.close()
-os.remove("s2temp.txt")
+for filename in path:
+        if 'column' in filename:
+                outfile1 = str('sample') + filename
+                with open(filename, "r") as inn:
+                        sep =  inn.read().replace(';','\n')
+                with open(outfile1, "w+") as out:
+                        out.write(sep)
+                unique = []
+                outfile2 = "final" + outfile1
+                openoutfile2 = open(outfile2, "w")
+                for line in open(outfile1,"r"):
+                        if line not in unique:
+                                openoutfile2.write(line)
+                                unique.append(line)
+                os.remove(outfile1)
+                os.remove(filename)
+
+path = os.listdir('.')
+
+# now need to work out how to rename the output file as the sample name
+
+for filename in path:
+        if 'finalsamplecolumn' in filename:
+                openfile = open(filename, "r")
+                with openfile as f:
+                        for line in f:
+                                if char.isdigit() in line:
+                                        print line
+#                       firstline = f.readline()
+#                       print firstline
