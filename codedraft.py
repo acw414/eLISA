@@ -31,10 +31,9 @@ for line in openfile:
         Col = line.split("\t")
         if len(Col) == headlen:
                 for x in colrange:
-                        if len(Col) == headlen:
-                                if Col[x] != "0":
-                                        sp = line.split(';')[-1]
-                                        masterlist[x] =  masterlist[x] + ';' + sp
+                        if Col[x] != "0":
+                                sp = line.split(';')[-1]
+                                masterlist[x] =  masterlist[x] + ';' + sp
 for i in colrange:
         filename = "column" + str(i) + ".txt"
         with open(filename, 'w') as output:
