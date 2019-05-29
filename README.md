@@ -21,19 +21,10 @@ This program will take a taxonomy file from an eDNA sample as the input, as well
 ***THINGS TO ADD***
   - give our project an 'innovative' name. LISA? Listed Invasive Species Analyser?
   - *things the user should know in advance - hoffman/originr (to the readme) - Done*  
-  - format of the file - each sequence entry must be on a new line   
   - requirements that the user needs on the bioinformatics end   
   - *more comments in the code itself*    
-  - *add comments to bit saying you're mporting/loading things   
-  - *printing an error message if they dont have:
-    - *the right arguments   
-    - *if the input is not tab delimited or doesnt use semicolons as delimeters in the last column
+  - *add comments to bit saying you're mporting/loading things*   
+  - *printing an error message if they dont have:*
+    - *the right arguments*   
+    - *if the input is not tab delimited or doesnt use semicolons as delimeters in the last column*
     
-to skip the 1st line  
-do an if statement, if line not in uniq 1 and line >1 (or zero): do   
-do an if statmenet   
-if line = 0, split line by tabs, and write the 1st element   
-else, (if not the 1st line), do the repeating thing    
-print the len of every single line. see how it works   
-use header as a reference - for i in len(elementds in header)   
-make a count of all species  + make the list of the unusable species
