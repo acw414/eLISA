@@ -31,7 +31,7 @@ for files in list directory: #need to search by sample name
   print "percent_invasive\% of species in this sample are invasive"
 
   for species marked as invasive:
-    print native_range
+    print "species is found in native_range" #native_range is built-in function
 
 #calculate %invasive for all files in list directory
   
