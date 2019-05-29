@@ -14,9 +14,9 @@ The program is designed to make it convenient for biologist to sort through mult
 
 **What the user needs installed and dataset format:**
 
-The user will need to install R - a statistical programming and visualization tool. The user will need to install the [originr](https://github.com/ropensci/originr) package. The user will need to use UCLA's Hoffman server to perform computations. Once logged in, the user will need to load Python and R modules. 
+The user will need to use UCLA's Hoffman2 server to run this program. /name of our program/ will load will load Python and R modules, and data analysis will use the [originr](https://github.com/ropensci/originr) package. 
 
-This program will take a taxonomy file from an eDNA sample as the input, as well as the country or regional area the samples were collected from. The file should split species in different rows, and the number of occurrences at each sampling site in the columns. This program will extract the species, compare them to multiple datasets using originr, and determine whether the species are invasive or not in the country specified in the input. The program also returns other statistics depending on the parameters included by the user.
+This program will take a taxonomy file from an eDNA sample as the input. The file should split species in different rows, and the number of occurrences at each sampling site in the columns. This program will extract the species present at each sample site, compare them to datasets using originr, and determine whether the species are invasive or not in the country **specified in the input**. The program also returns other statistics depending on the parameters included by the user.
 
 ***THINGS TO ADD***
   - give our project an 'innovative' name. LISA? Listed Invasive Species Analyser?
