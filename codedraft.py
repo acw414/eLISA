@@ -4,6 +4,8 @@
 
 #Usage = python2 codedraft.py inputfile
 
+# Imports the required functions to Hoffman
+
 import re
 import string
 import sys
@@ -12,7 +14,7 @@ import os
 inputfile = sys.argv[1]
 openfile = open(inputfile, "r")
 
-#This works out the number of columns in the input file
+# Works out the number of samples (the number of columns) in the input file, and adds the header of each to a masterlist
 
 with open(inputfile, "r") as f:
         h = f.readline()
@@ -25,6 +27,8 @@ masterlist = [0]
 for x in colrange:
         masterlist.append(header[x])
 
+# For each line with species data in the input file, if the column value is more than 0, the species name will be added to the end of the column header in the masterlist. 
+
 openfile.readline() #skips the 1st line
 for line in openfile:
         line = line.strip()
@@ -34,6 +38,9 @@ for line in openfile:
                         if Col[x] != "0":
                                 sp = line.split(';')[-1]
                                 masterlist[x] =  masterlist[x] + ';' + sp
+
+# Makes a file for each sample; writes the masterlist corresponding to that sample
+
 for i in colrange:
         filename = "column" + str(i) + ".txt"
         with open(filename, 'w') as output:
@@ -60,7 +67,7 @@ for filename in path:
                 os.remove(outfile1)
                 os.remove(filename)
 
-path = os.listdir('.')
+#path = os.listdir('.')
 
 # now need to work out how to rename the output file as the sample name
 
