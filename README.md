@@ -24,10 +24,10 @@ This program will take a taxonomy file from an eDNA sample as the input, as well
   - format of the file - each sequence entry must be on a new line   
   - requirements that the user needs on the bioinformatics end   
   - *more comments in the code itself*    
-  - add comments to bit saying you're mporting/loading things   
-  - printing an error message if they dont have:
-    - the right arguments   
-    - if the input is not tab delimited or doesnt use semicolons as delimeters in the last column
+  - *add comments to bit saying you're mporting/loading things   
+  - *printing an error message if they dont have:
+    - *the right arguments   
+    - *if the input is not tab delimited or doesnt use semicolons as delimeters in the last column
     
 to skip the 1st line  
 do an if statement, if line not in uniq 1 and line >1 (or zero): do   
