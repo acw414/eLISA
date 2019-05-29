@@ -5,7 +5,7 @@ library("tidyverse")
 library("originr")
 
 
-for files in list directory: #need to search by sample name
+for files in list directory: #need to search by sample name- so for file in list that start with "xxx"
 
   #add every species in the list to a vector to be used as input
   for element in file:
