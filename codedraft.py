@@ -2,7 +2,7 @@
 
 #This script takes an eDNA output file (with columns of different locations and taxonomy information in the last one), and will extract the species name (if applicable)
 
-#Usage = python2 codedraft.py inputfile
+#Usage = python codedraft.py inputfile
 
 # Imports the required functions to Hoffman
 
@@ -11,8 +11,27 @@ import string
 import sys
 import os
 
-inputfile = sys.argv[1]
-openfile = open(inputfile, "r")
+inputerror = ("""
+WARNING: INPUT ERROR.
+/nameofourprogram/ requires one input - the name of your input file.
+Usage:
+      	python codedraft.py inputfile.txt
+Please check input and try again.
+""")
+
+delimitererror = ("""
+WARNING: DELIMITER ERROR
+/name of our program/ requires taxonomic data seperated by semicolons.
+For example:
+        Eukaryota;Streptophyta;Bryopsida;Bryales;Bryaceae;Gemmabryum;Gemmabryum dichotomum
+Please check input file and try again.
+""")
+
+if len(sys.argv) != 2:
+        print usageerror
+else:
+     	inputfile = sys.argv[1]
+        openfile = open(inputfile, "r")
 
 # Works out the number of samples (the number of columns) in the input file, and adds the header of each to a masterlist
 
@@ -37,7 +56,7 @@ for line in openfile:
                 for x in colrange:
                         if Col[x] != "0":
                                 if ';' not in line:
-                                        sys.stderr.write("Taxonomy data must be seperated by semicolons. Please check input file")
+                                        print delimitererror
                                 else:
                                      	sp = line.split(';')[-1]
                                         masterlist[x] =  masterlist[x] + ';' + sp
