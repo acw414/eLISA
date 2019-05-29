@@ -4,30 +4,34 @@ install.packages("originr")
 library("tidyverse")
 library("originr")
 
-count the number of species in the list = total
 
-#add every species in the list to a vector to be used as input
-for element in list:
-  element += sp
+for files in list directory: #need to search by sample name
 
-gisd(sp)
+  #add every species in the list to a vector to be used as input
+  for element in file:
+    element += sp
+    total = nrow(sp) #counts number of rows in dataframe
+    for species in sp:
+    
+      gisd(species)
 
-for species in list:
+      if: gisd(sp) returns "Not in GISD"
+        then mark species as unknown
 
-if: gisd(sp) returns "Not in GISD"
-then mark species as unknown
+      elif: gisd(sp) returns "united states" for 'native_range'
+        then mark species as native
 
-elif: gisd(sp) returns "united states" for 'native_range'
-then mark species as native
+      elif: gisd(sp) returns "united states" for 'alien_range'
+        then mark species as invasive
 
-elif: gisd(sp) returns "united states" for 'alien_range'
-then mark species as invasive
+      else: # species exists in gisd and "united states" is not returned under native_range or alien_range:
+        then mark species as foreign
 
-else: # species exists in gisd and "united states" is not returned under native_range or alien_range:
-then mark species as foreign
+  percent_invasive = (invasive/total)*100
+  print "percent_invasive\% of species in this sample are invasive"
 
-percent_invasive = (invasive/total)*100
-print "percent_invasive\% of species in this sample are invasive"
+  for species marked as invasive:
+    print native_range
 
-for species marked as invasive:
-print native_range
+#calculate %invasive for all files in list directory
+  
