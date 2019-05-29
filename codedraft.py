@@ -36,9 +36,12 @@ for line in openfile:
         if len(Col) == headlen:
                 for x in colrange:
                         if Col[x] != "0":
-                                sp = line.split(';')[-1]
-                                masterlist[x] =  masterlist[x] + ';' + sp
-
+                                if ';' not in line:
+                                        sys.stderr.write("Taxonomy data must be seperated by semicolons. Please check input file")
+                                else:
+                                     	sp = line.split(';')[-1]
+                                        masterlist[x] =  masterlist[x] + ';' + sp
+              
 # Makes a file for each sample; writes the masterlist corresponding to that sample
 
 for i in colrange:
@@ -66,17 +69,3 @@ for filename in path:
                                 unique.append(line)
                 os.remove(outfile1)
                 os.remove(filename)
-
-#path = os.listdir('.')
-
-# now need to work out how to rename the output file as the sample name
-
-#for filename in path:
-#        if 'finalsamplecolumn' in filename:
-#                openfile = open(filename, "r")
-#                with openfile as f:
-#                        for line in f:
-#                                if char.isdigit() in line:
-#                                        print line
-#                       firstline = f.readline()
-#                       print firstline
