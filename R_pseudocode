@@ -18,10 +18,10 @@ for files in list directory: #need to search by sample name
       if: gisd(sp) returns "Not in GISD"
         then mark species as unknown
 
-      elif: gisd(sp) returns "united states" for 'native_range'
+      elif: gisd(sp) returns "united states" in 'native_range'
         then mark species as native
 
-      elif: gisd(sp) returns "united states" for 'alien_range'
+      elif: gisd(sp) returns "united states" in 'alien_range'
         then mark species as invasive
 
       else: # species exists in gisd and "united states" is not returned under native_range or alien_range:
