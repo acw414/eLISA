@@ -64,12 +64,12 @@ path = os.listdir('.')
 
 # now need to work out how to rename the output file as the sample name
 
-for filename in path:
-        if 'finalsamplecolumn' in filename:
-                openfile = open(filename, "r")
-                with openfile as f:
-                        for line in f:
-                                if char.isdigit() in line:
-                                        print line
+#for filename in path:
+#        if 'finalsamplecolumn' in filename:
+#                openfile = open(filename, "r")
+#                with openfile as f:
+#                        for line in f:
+#                                if char.isdigit() in line:
+#                                        print line
 #                       firstline = f.readline()
 #                       print firstline
