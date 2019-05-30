@@ -1,8 +1,7 @@
 #!/usr/bin/env Rscript
 #usage- Rscript --vanilla finalRcode.R
-
-install.packages("tidyverse")
-install.packages("originr")
+#install.packages("tidyverse")
+#install.packages("originr")
 
 library("tidyverse")
 library("originr")
@@ -10,28 +9,34 @@ library("originr")
 x = "Not in GISD"
 invasive = list()
 
-filenames = dir(pattern="finalsamplecolumn*") #finds required species files
-for( i in 1:length(filenames) ) #creates for-loop for those files
+setwd('~/Project_local')
+
+filenames <- list.files(path = ".",pattern="finalsamplecolumn.*.txt") #finds required species files
+for( i in (filenames) ) #creates for-loop for those files
 {
-  total = (nrow(i)-1) #calculates amount of species in file
-  #for every species starting 2nd row
-  for(element in 2:length(i)){
-    #apply species to function and assign result to variable
+  file = read.csv(i,header=T)
+  filevector = file[[1]]
+  total = length(filevector)
+  for(element in filevector){
     presence <- gisd(element)
-    # if the result says "not in Gisd"(x) then print message
     if(presence == x){
       print("Not in database")
     }
-    #else save the element to list for invasive species
-    else{ invasive <- element}
+    else{ 
+      for (i in seq(1,total)){
+      
+      invasive[i] = 1 + i
+    }
+    }
   }
-  #calculate %invasive for file
-  percent_invasive = ((length(invasive))/total)*100
-  #print value
-  cat(percent_invasive, 'percent of species in this sample are invasive') 
-  # for species in invasive list, print elements(regions) in native range
-  for(y in invasive){
-    cat('species is found in', native_range)
-  }
-} 
+
+}
+print(invasive)
+
+percent_invasive = ((length(invasive))/total)*100  
+cat(percent_invasive, 'percent of species in this sample are invasive') 
+
+for(y in invasive){
+  cat('species is found in', native_range)
+}
 #need to produce a file that has a table with name of sample file, %invasive, print list invasive, and native_range
