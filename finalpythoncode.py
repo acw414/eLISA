@@ -11,14 +11,6 @@ import string
 import sys
 import os
 
-inputerror = ("""
-WARNING: INPUT ERROR.
-/nameofourprogram/ requires one input - the name of your input file.
-Usage:
-      	python codedraft.py inputfile.txt
-Please check input and try again.
-""")
-
 delimitererror = ("""
 WARNING: DELIMITER ERROR
 /name of our program/ requires taxonomic data seperated by semicolons.
@@ -27,11 +19,8 @@ For example:
 Please check input file and try again.
 """)
 
-if len(sys.argv) != 2:
-        print usageerror
-else:
-     	inputfile = sys.argv[1]
-        openfile = open(inputfile, "r")
+inputfile = sys.argv[1]
+openfile = open(inputfile, "r")
 
 # Works out the number of samples (the number of columns) in the input file, and adds the header of each to a masterlist
 
