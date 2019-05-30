@@ -22,19 +22,21 @@ This program will take a taxonomy file from an eDNA sample as the input. The fil
   - give our project an 'innovative' name. LISA? Listed Invasive Species Analyser?
   - ~things the user should know in advance - hoffman/originr (to the readme)~   
   - requirements that the user needs on the bioinformatics end   
-  - *more comments in the code itself*    
-  - *add comments to bit saying you're mporting/loading things*   
-  - *printing an error message if they dont have:*
-    - *the right arguments*   
-    - *if the input is not tab delimited or doesnt use semicolons as delimeters in the last column*
-  - *need to start with 'module load R' before starting the program. include in bash script before loading everything.*    
+  - ~more comments in the code itself~       
+  - ~add comments to bit saying you're mporting/loading things~   
+  - ~printing an error message if they dont have:~
+    - ~the right arguments~   
+    - ~if the input is not tab delimited or doesnt use semicolons as delimeters in the last column~
+  - ~need to start with 'module load R' before starting the program. include in bash script before loading everything.~    
   - need to create the output file   
   - need to delete the finalsamplecolumn files after the output file finishes - do this in bash script    
-  - *need to remove empty lines from finalsamplecolumn files*    
+  - ~need to remove empty lines from finalsamplecolumn files~    
   - add the code that runs the Rcodes in the Bash script .   
-  - *need to remove empty lines from finalsamplecolumn files*    
-  - need to say the input file cannot have the words "column" in the filename   
-  - need a section saying all the requirement for the input file . 
+  - ~need to remove empty lines from finalsamplecolumn files~    
+  - need a section saying all the requirement for the input file .    
+    - say the input file cannot have the words "column" in the filename   
+    - say it needs to be a tab-delimited table with semicolons seperating the taxonomic info in the last column
+    - the input file cannot have the string "column" in its file name    
   - make the readme look nice. add the vingette(??) and the other things listed in the project details  
     - maybe make a flow chart of how the program works idk?
     
