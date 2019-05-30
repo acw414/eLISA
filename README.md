@@ -31,6 +31,8 @@ This program will take a taxonomy file from an eDNA sample as the input. The fil
   - need to create the output file   
   - need to delete the finalsamplecolumn files after the output file finishes - do this in bash script    
   - *need to remove empty lines from finalsamplecolumn files*    
+  - add the code that runs the Rcodes in the Bash script .   
+  - *need to remove empty lines from finalsamplecolumn files*    
   - need to say the input file cannot have the words "column" in the filename   
   - need a section saying all the requirement for the input file . 
   - make the readme look nice. add the vingette(??) and the other things listed in the project details  
