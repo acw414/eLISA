@@ -20,7 +20,7 @@ This program will take a taxonomy file from an eDNA sample as the input. The fil
 
 **PROJECT TO DO LIST**
   - give our project an 'innovative' name. LISA? Listed Invasive Species Analyser?
-  - *things the user should know in advance - hoffman/originr (to the readme) - Done*  
+  - ~things the user should know in advance - hoffman/originr (to the readme)~   
   - requirements that the user needs on the bioinformatics end   
   - *more comments in the code itself*    
   - *add comments to bit saying you're mporting/loading things*   
