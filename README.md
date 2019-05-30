@@ -27,5 +27,7 @@ This program will take a taxonomy file from an eDNA sample as the input. The fil
   - *printing an error message if they dont have:*
     - *the right arguments*   
     - *if the input is not tab delimited or doesnt use semicolons as delimeters in the last column*
-  - need to say people should start with 'module load R' before starting the program. --- include it inthe bash script before loading everything.   
-    
+  - need to start with 'module load R' before starting the program. include in bash script before loading everything.    
+  - need to create the output file   
+  - need to delete the finalsamplecolumn files after the output file finishes - do this in bash script    
+  - need to remove empty lines from finalsamplecolumn files   
