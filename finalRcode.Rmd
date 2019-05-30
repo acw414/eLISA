@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-#usage- chmod 755 finalRcode.Rmd
+#usage- chmod 755 finalRcode.R
 
 install.packages("tidyverse")
 install.packages("originr")
