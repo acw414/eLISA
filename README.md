@@ -30,6 +30,8 @@ This program will take a taxonomy file from an eDNA sample as the input. The fil
   - *need to start with 'module load R' before starting the program. include in bash script before loading everything.*    
   - need to create the output file   
   - need to delete the finalsamplecolumn files after the output file finishes - do this in bash script    
-  - need to remove empty lines from finalsamplecolumn files   
+  - *need to remove empty lines from finalsamplecolumn files *    
   - need to say the input file cannot have the words "column" in the filename   
   - need a section saying all the requirement for the input file . 
+  - make the readme look nice. add the vingette(??) and the other things listed in the project details  
+    - maybe make a flow chart of how the program works idk?
