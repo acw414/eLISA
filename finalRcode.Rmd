@@ -31,8 +31,9 @@ for( i in (filenames) ) #creates for-loop for those files
     #}
     #}
   }
-
 }
+
+
 print(invasive)
 
 percent_invasive = ((length(invasive))/total)*100  
