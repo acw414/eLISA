@@ -16,18 +16,20 @@ for( i in (filenames) ) #creates for-loop for those files
 {
   file = read.csv(i,header=T)
   filevector = file[[1]]
+  charvector = as.character(filevector)
   total = length(filevector)
-  for(element in filevector){
+  for(element in charvector){
     presence <- gisd(element)
-    if(presence == x){
+    if(x %in% presence){
       print("Not in database")
     }
-    else{ 
-      for (i in seq(1,total)){
+    #fix this 
+    #else{ 
+    #  for (i in seq(1,total)){
       
-      invasive[i] = 1 + i
-    }
-    }
+    #  invasive[i] = 1 + element
+    #}
+    #}
   }
 
 }
