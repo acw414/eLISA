@@ -1,0 +1,27 @@
+install.packages("tidyverse")
+install.packages("originr")
+
+library("tidyverse")
+library("originr")
+
+x = "Not in GISD"
+
+
+filenames = dir(pattern="finalsamplecolumn*") #finds required species files
+for( i in 1:length(filenames) ) #creates for-loop for those files
+{
+  total = (nrow(i)-1)
+  for(element in 2:length(i)){
+    presence <- gisd(element)
+    if(presence == x){
+      print("Not in database")
+    }
+    else{ element = 'invasive'}
+  }
+  percent_invasive = (invasive/total)*100  
+  print('percent_invasive percent of species in this sample are invasive') 
+  
+  for(y in invasive){
+    print('species is found in native_range()')
+  }
+} 
