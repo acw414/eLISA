@@ -34,14 +34,14 @@ This program will take a taxonomy file from an eDNA sample as the input. The fil
   - add the code that runs the Rcodes in the Bash script .   
   - ~need to remove empty lines from finalsamplecolumn files~    
   - need a section saying all the requirement for the input file .    
-    - say the input file cannot have the words "column" in the filename   
-    - say it needs to be a tab-delimited table with semicolons seperating the taxonomic info in the last column
-    - the input file cannot have the string "column" in its file name    
-  - make the readme look nice. add the vingette(??) and the other things listed in the project details  
-    - maybe make a flow chart of how the program works idk?
+    - say the input file cannot have the string "column" in the filename   
+    - say it needs to be a tab-delimited table with semicolons seperating the taxonomic info in the last column    
+  - make the readme look nice. add the vingette(??) and the other things listed in the project details   
+    - maybe make a flow chart of how the program works idk?   
     
-***How the README should be structured, according to https://github.com/pceeb/UCLA_Spring_2019/tree/master/Term_project***       
-**The Readme (125 pts)**    
+***How the README should be structured, according to https://github.com/pceeb/UCLA_Spring_2019/tree/master/Term_project***          
+**The Readme (125 pts)**       
+
 **Introduction:** This section indicates the purpose of the program and provides background and a justification for why the program was created.    
 **Program Workflow:** This section provides an operation overview of what the program does. A flowchart or some other diagram might be helpful, but is not required.     
 **Dependencies:** To run a program users may need to have dependencies installed. Indicate which dependencies are required for you program.   
