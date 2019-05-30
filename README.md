@@ -36,7 +36,7 @@ This program will take a taxonomy file from an eDNA sample as the input. The fil
   - make the readme look nice. add the vingette(??) and the other things listed in the project details  
     - maybe make a flow chart of how the program works idk?
     
-# How the README should be structured, according to https://github.com/pceeb/UCLA_Spring_2019/tree/master/Term_project :    
+***How the README should be structured, according to https://github.com/pceeb/UCLA_Spring_2019/tree/master/Term_project***       
 **The Readme (125 pts)**    
 **Introduction:** This section indicates the purpose of the program and provides background and a justification for why the program was created.    
 **Program Workflow:** This section provides an operation overview of what the program does. A flowchart or some other diagram might be helpful, but is not required.     
