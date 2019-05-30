@@ -34,3 +34,4 @@ for( i in 1:length(filenames) ) #creates for-loop for those files
     cat('species is found in', native_range)
   }
 } 
+#need to produce a file that has a table with name of sample file, %invasive, print list invasive, and native_range
