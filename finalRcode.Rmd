@@ -13,18 +13,23 @@ invasive = list()
 filenames = dir(pattern="finalsamplecolumn*") #finds required species files
 for( i in 1:length(filenames) ) #creates for-loop for those files
 {
-  total = (nrow(i)-1)
+  total = (nrow(i)-1) #calculates amount of species in file
+  #for every species starting 2nd row
   for(element in 2:length(i)){
+    #apply species to function and assign result to variable
     presence <- gisd(element)
+    # if the result says "not in Gisd"(x) then print message
     if(presence == x){
       print("Not in database")
     }
+    #else save the element to list for invasive species
     else{ invasive <- element}
   }
-  
-  percent_invasive = ((length(invasive))/total)*100  
+  #calculate %invasive for file
+  percent_invasive = ((length(invasive))/total)*100
+  #print value
   cat(percent_invasive, 'percent of species in this sample are invasive') 
-  
+  # for species in invasive list, print elements(regions) in native range
   for(y in invasive){
     cat('species is found in', native_range)
   }
