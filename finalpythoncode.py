@@ -67,8 +67,10 @@ for i in colrange:
         filename = "column" + str(i) + ".txt"
         with open(filename, 'w') as output:
                 output.write(masterlist[i])
-
+                  
 # Puts each species on seperate lines; removes any repeats
+# Deletes temporary files
+# Creates files for each sample with the names finalsamplecolumnX.txt, with X being the column that sample was in
 
 path = os.listdir('.')
 
