@@ -18,8 +18,8 @@ for( i in 1:length(filenames) ) #creates for-loop for those files
     }
     else{ element = 'invasive'}
   }
-  percent_invasive = (invasive/total)*100  
-  print('percent_invasive percent of species in this sample are invasive') 
+  percent_invasive = (invasive/total)*100 
+  print('percent_invasive percent of species in this sample are invasive')
   
   for(y in invasive){
     print('species is found in native_range()')
