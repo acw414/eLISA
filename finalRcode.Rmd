@@ -7,12 +7,6 @@ install.packages("originr")
 library("tidyverse")
 library("originr")
 
-install.packages("tidyverse")
-install.packages("originr")
-
-library("tidyverse")
-library("originr")
-
 x = "Not in GISD"
 invasive = list()
 
