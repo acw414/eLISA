@@ -23,7 +23,7 @@ for( i in (filenames) ) #creates for-loop for those files
     if(x %in% presence){
       print("Not in database")
     }
-    #fix this 
+     
     #else{ 
     #  for (i in seq(1,total)){
       
