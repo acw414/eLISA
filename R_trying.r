@@ -4,20 +4,19 @@
 library("tidyverse")
 library("originr")
 
-y = "Not in GISD"
+
 #invasive = list()
 
 setwd('~/Project_local')
 files <- list.files(path=".", pattern="finalsamplecolumn.*.txt", full.names=TRUE, recursive=FALSE)
 lapply(files, function(x) {
   t <- read.csv(x, header=TRUE) # load file
+  t <- t[[1]]
   out <- for(species in t){
       presence <- gisd(species)
-      if(y %in% presence){
-        print("Not in database")
-      } else {
-        print(species)
-      }
+      print(presence)
+        
+      
     
   }
   #write.csv(out, "~/Project_local/output.txt", sep="\t", quote=FALSE, row.names=FALSE, col.names=TRUE)
