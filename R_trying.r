@@ -21,6 +21,4 @@ lapply(files, function(x) {
   }
   #write.csv(out, "~/Project_local/output.txt", sep="\t", quote=FALSE, row.names=FALSE, col.names=TRUE)
 })
-
-#https://stackoverflow.com/questions/14958516/looping-through-all-files-in-directory-in-r-applying-multiple-commands
-#https://stats.idre.ucla.edu/r/codefragments/read_multiple/
+#need to produce a file that has a table with name of sample file, %invasive, print list invasive, and native_range
