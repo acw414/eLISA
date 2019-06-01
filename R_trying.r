@@ -21,4 +21,5 @@ lapply(files, function(x) {
   }
   #write.csv(out, "~/Project_local/output.txt", sep="\t", quote=FALSE, row.names=FALSE, col.names=TRUE)
 })
+#invasive_per_file = (number of invasive species/number of total species)*100
 #need to produce a file that has a table with name of sample file, %invasive, print list invasive, and native_range
