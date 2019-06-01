@@ -1,0 +1,170 @@
+[1] "New file"
+$`Oplegnathus woodwardi`
+$`Oplegnathus woodwardi`$species
+[1] "Oplegnathus woodwardi"
+
+$`Oplegnathus woodwardi`$status
+[1] "Not in GISD"
+
+
+$`Hypsypops rubicundus`
+$`Hypsypops rubicundus`$species
+[1] "Hypsypops rubicundus"
+
+$`Hypsypops rubicundus`$status
+[1] "Not in GISD"
+
+
+$`Carpobrotus edulis`
+$`Carpobrotus edulis`$species
+[1] "Carpobrotus edulis"
+
+$`Carpobrotus edulis`$alien_range
+ [1] "albania"          "argentina"        "australia"        "bermuda"          "chile"            "croatia"         
+ [7] "france"           "french polynesia" "germany"          "gibraltar"        "greece"           "guernsey"        
+[13] "ireland"          "italy"            "malta"            "mexico"           "new zealand"      "pitcairn"        
+[19] "portugal"         "saint helena"     "spain"            "tunisia"          "united kingdom"   "united states"   
+
+$`Carpobrotus edulis`$native_range
+character(0)
+
+
+$`Sphyraena helleri`
+$`Sphyraena helleri`$species
+[1] "Sphyraena helleri"
+
+$`Sphyraena helleri`$status
+[1] "Not in GISD"
+
+
+$`Oxyjulis californica`
+$`Oxyjulis californica`$species
+[1] "Oxyjulis californica"
+
+$`Oxyjulis californica`$status
+[1] "Not in GISD"
+
+
+$`Engraulis mordax`
+$`Engraulis mordax`$species
+[1] "Engraulis mordax"
+
+$`Engraulis mordax`$status
+[1] "Not in GISD"
+
+
+$`Girella simplicidens`
+$`Girella simplicidens`$species
+[1] "Girella simplicidens"
+
+$`Girella simplicidens`$status
+[1] "Not in GISD"
+
+
+$`Semicossyphus pulcher`
+$`Semicossyphus pulcher`$species
+[1] "Semicossyphus pulcher"
+
+$`Semicossyphus pulcher`$status
+[1] "Not in GISD"
+
+
+$`Rhacochilus vacca`
+$`Rhacochilus vacca`$species
+[1] "Rhacochilus vacca"
+
+$`Rhacochilus vacca`$status
+[1] "Not in GISD"
+
+
+[1] "New file"
+$`Oxyjulis californica`
+$`Oxyjulis californica`$species
+[1] "Oxyjulis californica"
+
+$`Oxyjulis californica`$status
+[1] "Not in GISD"
+
+
+$`Engraulis mordax`
+$`Engraulis mordax`$species
+[1] "Engraulis mordax"
+
+$`Engraulis mordax`$status
+[1] "Not in GISD"
+
+
+$`Citharichthys stigmaeus`
+$`Citharichthys stigmaeus`$species
+[1] "Citharichthys stigmaeus"
+
+$`Citharichthys stigmaeus`$status
+[1] "Not in GISD"
+
+
+$`Acacia melanoxylon`
+$`Acacia melanoxylon`$species
+[1] "Acacia melanoxylon"
+
+$`Acacia melanoxylon`$alien_range
+ [1] "argentina"                    "belgium"                      "bhutan"                      
+ [4] "bolivia"                      "brazil"                       "chile"                       
+ [7] "china"                        "colombia"                     "ethiopia"                    
+[10] "france"                       "india"                        "kenya"                       
+[13] "lesotho"                      "mauritius"                    "new caledonia"               
+[16] "new zealand"                  "pakistan"                     "peru"                        
+[19] "portugal"                     "reunion"                      "saint helena"                
+[22] "south africa"                 "spain"                        "sri lanka"                   
+[25] "swaziland"                    "tanzania, united republic of" "united states"               
+[28] "uruguay"                      "venezuela"                   
+
+$`Acacia melanoxylon`$native_range
+[1] "australia"
+
+
+$`Sphyraena helleri`
+$`Sphyraena helleri`$species
+[1] "Sphyraena helleri"
+
+$`Sphyraena helleri`$status
+[1] "Not in GISD"
+
+
+$`Girella simplicidens`
+$`Girella simplicidens`$species
+[1] "Girella simplicidens"
+
+$`Girella simplicidens`$status
+[1] "Not in GISD"
+
+
+$`Medialuna californiensis`
+$`Medialuna californiensis`$species
+[1] "Medialuna californiensis"
+
+$`Medialuna californiensis`$status
+[1] "Not in GISD"
+
+
+$`Semicossyphus pulcher`
+$`Semicossyphus pulcher`$species
+[1] "Semicossyphus pulcher"
+
+$`Semicossyphus pulcher`$status
+[1] "Not in GISD"
+
+
+$`Chromis punctipinnis`
+$`Chromis punctipinnis`$species
+[1] "Chromis punctipinnis"
+
+$`Chromis punctipinnis`$status
+[1] "Not in GISD"
+
+
+[[1]]
+NULL
+
+[[2]]
+NULL
+
