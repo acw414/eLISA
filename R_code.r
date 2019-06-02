@@ -1,21 +1,34 @@
-#install.packages("tidyverse")
 #install.packages("originr")
 
-library("tidyverse")
+
 library("originr")
 
-sink('output.txt')
-setwd('~/Project_local') #change this to current directory
 files <- list.files(path=".", pattern="finalsamplecolumn.*.txt", full.names=TRUE, recursive=FALSE)
-lapply(files, function(x) {
-  t <- read.csv(x, header=TRUE) # load file
-  t <- t[[1]]
-  print('New file')
-  out <- for(species in t){
-    presence <- gisd(species)
-    print(presence)
-  }
-})
-sink()
-#invasive_per_file = (number of invasive species/number of total species)*100
-#need to produce a file that has a table with name of sample file, %invasive, print list invasive, and native_range
+
+results <- data.frame()
+
+for (file in files){
+    mydata <- read.csv(file, header=TRUE, stringsAsFactors = F)
+    invasive <- 0
+    invasive_species <- c()
+    for (species in mydata[,1]){
+      presence <- gisd(species)
+      if (is.null(presence[[1]]$status)){
+        if ("united states" %in% presence[[1]]$alien_range){
+          invasive <- invasive + 1
+          invasive_species <- c(invasive_species, presence[[1]]$species)
+        }
+      }
+    }
+    current <- data.frame(sample = colnames(mydata)[1], count = nrow(mydata), 
+                          invasive = invasive, percentage =  invasive/ nrow(mydata),
+                          invasive_species = paste(invasive_species, collapse = ', '))
+    results <- rbind(results, current)
+}
+
+summary <- data.frame(sample='total', count = sum(results$count), invasive = sum(results$invasive),
+                      percentage = sum(results$invasive)/sum(results$count),
+                      invasive_species = '')
+results <- rbind(results, summary)
+
+write.csv(results, 'results.csv', row.names = F)
