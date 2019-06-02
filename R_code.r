@@ -10,10 +10,10 @@ files <- list.files(path=".", pattern="finalsamplecolumn.*.txt", full.names=TRUE
 results <- data.frame()
 
 for (file in files){
-    mydata <- read.csv(file, header=TRUE, stringsAsFactors = F)
+    t <- read.csv(file, header=TRUE, stringsAsFactors = F)
     invasive <- 0
     invasive_species <- c()
-    for (species in mydata[,1]){
+    for (species in t[,1]){
       presence <- gisd(species)
       if (is.null(presence[[1]]$status)){
         if ("united states" %in% presence[[1]]$alien_range){
@@ -22,8 +22,8 @@ for (file in files){
         }
       }
     }
-    current <- data.frame(sample = colnames(mydata)[1], count = nrow(mydata), 
-                          invasive = invasive, percentage =  invasive/ nrow(mydata),
+    current <- data.frame(sample = colnames(t)[1], count = nrow(t), 
+                          invasive = invasive, percentage =  invasive/ nrow(t),
                           invasive_species = paste(invasive_species, collapse = ', '))
     results <- rbind(results, current)
 }
