@@ -1,6 +1,7 @@
 #install.packages("originr")
 
 #need to comment all over this code
+#currently works for checking if invasive in "united states" - line 19
 
 library("originr")
 
