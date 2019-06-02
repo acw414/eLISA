@@ -1,0 +1,4 @@
+"sample","count","invasive","percentage","invasive_species"
+"X12S_first1000reads.LSC.A.1.S19.L001",9,1,0.111111111111111,"Carpobrotus edulis"
+"X12S_first1000reads.LSC.A.2.S20.L001",10,2,0.2,"Acacia melanoxylon, Carpobrotus edulis"
+"total",19,3,0.157894736842105,""
