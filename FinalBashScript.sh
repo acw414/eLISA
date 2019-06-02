@@ -27,4 +27,5 @@ else
         echo "searching spceies database"
         echo "........."
         #load R and run the R code
+	Rscript R_code.R
 fi
