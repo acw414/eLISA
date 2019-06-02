@@ -30,10 +30,10 @@ This program will take a taxonomy file from an eDNA sample as the input. The fil
     - ~the right arguments~   
     - ~if the input is not tab delimited or doesnt use semicolons as delimeters in the last column~
   - ~need to start with 'module load R' before starting the program. include in bash script before loading everything.~    
-  - need to create the output file   
+  - ~need to create the output file   
   - need to delete the finalsamplecolumn files after the output file finishes - do this in bash script    
   - ~need to remove empty lines from finalsamplecolumn files~    
-  - add the code that runs the Rcodes in the Bash script .   
+  - ~add the code that runs the Rcodes in the Bash script .   
   - ~need to remove empty lines from finalsamplecolumn files~    
   - need a section saying all the requirement for the input file .    
     - say the input file cannot have the string "column" in the filename   
@@ -41,7 +41,8 @@ This program will take a taxonomy file from an eDNA sample as the input. The fil
   - make the readme look nice. add the vingette(??) and the other things listed in the project details   
     - maybe make a flow chart of how the program works idk?   
   - percent invasive output - x100 and have % sign in the table? - x100 done. Need help with %sign
-    
+  - fix prupose of program and what user need installed
+   
 ***How the README should be structured, according to https://github.com/pceeb/UCLA_Spring_2019/tree/master/Term_project***          
 **The Readme (125 pts)**       
 
