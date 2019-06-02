@@ -40,7 +40,7 @@ This program will take a taxonomy file from an eDNA sample as the input. The fil
     - say it needs to be a tab-delimited table with semicolons seperating the taxonomic info in the last column    
   - make the readme look nice. add the vingette(??) and the other things listed in the project details   
     - maybe make a flow chart of how the program works idk?   
-  - percent invasive output - x100 and have % sign in the table?   
+  - percent invasive output - x100 and have % sign in the table? - x100 done. Need help with %sign
     
 ***How the README should be structured, according to https://github.com/pceeb/UCLA_Spring_2019/tree/master/Term_project***          
 **The Readme (125 pts)**       
