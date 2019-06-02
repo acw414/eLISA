@@ -3,6 +3,7 @@
 #need to comment all over this code
 #currently works for checking if invasive in "united states" - line 19
 
+
 library("originr")
 
 files <- list.files(path=".", pattern="finalsamplecolumn.*.txt", full.names=TRUE, recursive=FALSE)
@@ -23,13 +24,13 @@ for (file in files){
       }
     }
     current <- data.frame(sample = colnames(t)[1], count = nrow(t), 
-                          invasive = invasive, percentage =  invasive/ nrow(t),
+                          invasive = invasive, percentage =  (invasive/ nrow(t)*100),
                           invasive_species = paste(invasive_species, collapse = ', '))
     results <- rbind(results, current)
 }
 
 summary <- data.frame(sample='total', count = sum(results$count), invasive = sum(results$invasive),
-                      percentage = sum(results$invasive)/sum(results$count),
+                      percentage = (sum(results$invasive)/sum(results$count))*100,
                       invasive_species = '')
 results <- rbind(results, summary)
 
