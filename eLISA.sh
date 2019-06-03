@@ -1,15 +1,15 @@
 #!/bin/bash
 
-#This will be the main script for the program
-#It will run the Python script and then the R script
-#It will just take the file to be analyzed as the input
-#Usage = sh bashscript inputfile.txt
+#This is the main script for eLISA
+#It runs the Python code and then the R code
+#It takes the file to be analyzed as the input
+#Usage = sh eLISA.sh inputfile.txt
 
 inputerror=".........
 WARNING: INPUT ERROR.
-/namebofourprogram/ requires one input - the name of your input file.
+eLISA requires one input - the name of your input file.
 Example usage:
-	sh eLISA.py inputfile.txt
+	sh eLISA.sh inputfile.txt
 Please check input and try again
 ........."
 
