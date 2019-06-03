@@ -19,4 +19,4 @@ Steps for running the program:
    ```
 3) They should move the input file into the eLISA directory (if necessary), navigate into the directory, and type the command:
    ```
-   sh FinalBashCode.sh Fishsamplefile.txt
+   sh eLISA.sh Fishsamplefile.txt
