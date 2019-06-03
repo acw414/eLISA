@@ -18,14 +18,17 @@ Please check input and try again
 if [ "$#" != "1" ]; then
         echo "$inputerror"
 else
-    	module load python/3
+    	module load python/3.1
         echo "........."
         echo "sorting input file"
         python finalpythoncode.py $1
         echo "........."
         sed -i '/^$/d' finalsamplecolumn*.txt
-        echo "searching spceies database"
+        echo "searching species database"
+        module load R/3.4.0
+        R CMD BATCH R_code.r
         echo "........."
-        #load R and run the R code
-	Rscript R_code.R
+        echo "finalizing output table"
+#	rm ./finalsamplecolumn*
+        echo "........."
 fi
