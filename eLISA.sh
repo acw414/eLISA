@@ -20,15 +20,15 @@ if [ "$#" != "1" ]; then
 else
     	module load python/3.1
         echo "........."
-        echo "sorting input file"
+        echo "Sorting input file"
         python Python_eLISA.py $1
         echo "........."
         sed -i '/^$/d' finalsamplecolumn*.txt
-        echo "searching species database"
+        echo "Searching species database"
         module load R/3.4.0
         Rscript R_eLISA.r
         echo "........."
-        echo "finalizing output table"
+        echo "Finalizing output"
 	rm ./finalsamplecolumn*.txt
         echo "........."
 fi
