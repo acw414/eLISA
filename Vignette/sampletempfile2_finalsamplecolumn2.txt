@@ -2,9 +2,11 @@ X12S_first1000reads.LSC.A.2.S20.L001
 Oxyjulis californica
 Engraulis mordax
 Citharichthys stigmaeus
-Acacia melanoxylon
 Sphyraena helleri
 Girella simplicidens
 Medialuna californiensis
 Semicossyphus pulcher
 Chromis punctipinnis
+Cyprinus carpio
+Eriocheir sinensis
+Nerodia fasciata
