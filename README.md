@@ -1,6 +1,7 @@
-# README
+# eLISA : README
 
-***Welcome to eLISA, written by Anna Weir and Sohil Joshi.***
+***Welcome to eLISA, the eDNA List Invasive Species Analyzer***
+Authors: Anna Weir and Sohil Joshi.
 
 This project primarily uses data from [Environmental DNA](https://www.sciencedirect.com/science/article/pii/S0006320714004443) (eDNA), which is the genetic material that organisms shed into the environment around them, similar to how humans shed hair and skin cells throughout the day. This genetic material provides us insight into the past and present as it identifies all species that have passed through a particular area through analyzing samples of water, soil, sediment etc.   
 
@@ -19,21 +20,12 @@ The user will need to use UCLA's Hoffman2 server to run this program. /name of o
 This program will take a taxonomy file from an eDNA sample as the input. The file should split species in different rows, and the number of occurrences at each sampling site in the columns. This program will extract the species present at each sample site, compare them to datasets using originr, and determine whether the species are invasive or not in the country **specified in the input**. The program also returns other statistics depending on the parameters included by the user.
 
 **PROJECT TO DO LIST**
-  - give our project an 'innovative' name. LISA? Listed Invasive Species Analyser?
-    - how about eLISA? e for eDNA and change Analyser to Application? = eDNA List Invasive Species Application
-    - how about ISPS - Invasive Species Per Sample
-  - ~things the user should know in advance - hoffman/originr (to the readme)~   
   - requirements that the user needs on the bioinformatics end   
   - ~more comments in the code itself~       
   - ~add comments to bit saying you're mporting/loading things~   
-  - ~printing an error message if they dont have:~
-    - ~the right arguments~   
-    - ~if the input is not tab delimited or doesnt use semicolons as delimeters in the last column~
   - ~need to start with 'module load R' before starting the program. include in bash script before loading everything.~    
   - ~need to create the output file~   
   - ~need to delete the finalsamplecolumn files after the output file finishes - do this in bash script~    
-  - ~need to remove empty lines from finalsamplecolumn files~    
-  - ~add the code that runs the Rcodes in the Bash script~   
   - ~need to remove empty lines from finalsamplecolumn files~    
   - need a section saying all the requirement for the input file .    
     - say the input file cannot have the string "column" in the filename   
@@ -43,7 +35,8 @@ This program will take a taxonomy file from an eDNA sample as the input. The fil
   - percent invasive output - x100 and have % sign in the table? - x100 done. Need help with %sign
   - fix prupose of program and what user need installed
   - must have originr installed beforehand on R    
-  - say this only works for US within inland range    
+  - say this only works for US within inland range 
+  -
    
 ***How the README should be structured, according to https://github.com/pceeb/UCLA_Spring_2019/tree/master/Term_project***          
 **The Readme (125 pts)**       
