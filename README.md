@@ -1,4 +1,4 @@
-# eLISA : README
+# README
 
 ## Welcome to eLISA, the eDNA List Invasive Species Analyzer!   
 ***Written by Anna Weir (annacxweir@gmail.com) and Sohil Joshi (sohiljoshi.email@gmail.com)***   
@@ -34,6 +34,8 @@ Describe the files and or directories will be produced by your program.
 Scott Chamberlain and Ignasi Bartomeus (2018). originr: Fetch Species  
   Origin Data from the Web. R package version 0.3.0.
   https://CRAN.R-project.org/package=originr
+
+_______________
 
 **PROJECT TO DO LIST**
   - requirements that the user needs on the bioinformatics end   
