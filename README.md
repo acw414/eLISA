@@ -1,7 +1,7 @@
 # eLISA : README
 
 ## Welcome to eLISA, the eDNA List Invasive Species Analyzer!   
-***Written by Anna Weir (annacxweir@gmail.com) and Sohil Joshi ( )***   
+***Written by Anna Weir (annacxweir@gmail.com) and Sohil Joshi (sohiljoshi.email@gmail.com)***   
 
 This project primarily uses data from [Environmental DNA](https://www.sciencedirect.com/science/article/pii/S0006320714004443) (eDNA), which is the genetic material that organisms shed into the environment around them, similar to how humans shed hair and skin cells throughout the day. This genetic material provides us insight into the past and present as it identifies all species that have passed through a particular area through analyzing samples of water, soil, sediment etc.   
 
@@ -20,6 +20,7 @@ The user will need to use UCLA's Hoffman2 server to run this program. /name of o
 This program will take a taxonomy file from an eDNA sample as the input. The file should split species in different rows, and the number of occurrences at each sampling site in the columns. This program will extract the species present at each sample site, compare them to datasets using originr, and determine whether the species are invasive or not in the country **specified in the input**. The program also returns other statistics depending on the parameters included by the user.
 ### Instructions
 ### Expected output
+what the table looks like. how the user should view it
 ### References
 **PROJECT TO DO LIST**
   - requirements that the user needs on the bioinformatics end   
