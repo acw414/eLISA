@@ -1,6 +1,6 @@
 # eLISA : README
 
-***Welcome to eLISA, the eDNA List Invasive Species Analyzer***
+***Welcome to eLISA, the eDNA List Invasive Species Analyzer***   
 **Written by Anna Weir (annacxweir@gmail.com) and Sohil Joshi ( )**   
 
 This project primarily uses data from [Environmental DNA](https://www.sciencedirect.com/science/article/pii/S0006320714004443) (eDNA), which is the genetic material that organisms shed into the environment around them, similar to how humans shed hair and skin cells throughout the day. This genetic material provides us insight into the past and present as it identifies all species that have passed through a particular area through analyzing samples of water, soil, sediment etc.   
