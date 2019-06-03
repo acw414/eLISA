@@ -13,7 +13,7 @@ import os
 
 delimitererror = ("""
 WARNING: DELIMITER ERROR
-/name of our program/ requires taxonomic data seperated by semicolons.
+eLISA requires taxonomic data seperated by semicolons.
 For example:
         Eukaryota;Streptophyta;Bryopsida;Bryales;Bryaceae;Gemmabryum;Gemmabryum dichotomum
 Please check input file and try again.
