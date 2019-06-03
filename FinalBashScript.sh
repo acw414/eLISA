@@ -21,7 +21,7 @@ else
     	module load python/3
         echo "........."
         echo "sorting input file"
-        python codedraft1.py $1
+        python finalpythoncode.py $1
         echo "........."
         sed -i '/^$/d' finalsamplecolumn*.txt
         echo "searching spceies database"
