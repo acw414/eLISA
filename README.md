@@ -55,7 +55,9 @@ _______________
   - say this only works for US within inland range 
   - make our DOI + include how to cite us 
    
-***How the README should be structured, according to https://github.com/pceeb/UCLA_Spring_2019/tree/master/Term_project***          
+***How the README should be structured***            
+rubric : https://github.com/pceeb/UCLA_Spring_2019/blob/master/Term_project/Rubric.md    
+
 **The Readme (125 pts)**       
 
 **Introduction:** This section indicates the purpose of the program and provides background and a justification for why the program was created.    
