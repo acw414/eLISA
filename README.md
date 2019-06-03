@@ -31,7 +31,7 @@ This program will take a taxonomy file from an eDNA sample as the input. The fil
     - ~if the input is not tab delimited or doesnt use semicolons as delimeters in the last column~
   - ~need to start with 'module load R' before starting the program. include in bash script before loading everything.~    
   - ~need to create the output file~   
-  - need to delete the finalsamplecolumn files after the output file finishes - do this in bash script    
+  - ~need to delete the finalsamplecolumn files after the output file finishes - do this in bash script~    
   - ~need to remove empty lines from finalsamplecolumn files~    
   - ~add the code that runs the Rcodes in the Bash script~   
   - ~need to remove empty lines from finalsamplecolumn files~    
