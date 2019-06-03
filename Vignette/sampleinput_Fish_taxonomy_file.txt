@@ -11,7 +11,7 @@ merged_12S_2	71	76
 merged_12S_3	18	92	Eukaryota;Chordata;Actinopteri;NA;Sphyraenidae;Sphyraena;Sphyraena helleri
 merged_12S_4	104	0	Eukaryota;Chordata;Actinopteri;Labriformes;Labridae;Oxyjulis;Oxyjulis californica
 merged_12S_5	0	99	Eukaryota;Chordata;Actinopteri;Labriformes;Labridae;Oxyjulis;Oxyjulis californica
-merged_12S_6	31	43	Eukaryota;Chordata;Actinopteri;Clupeiformes;Engraulidae;Engraulis;Engraulis mordax
+merged_12S_6    31	43	Eukaryota;Chordata;Actinopteri;Clupeiformes;Engraulidae;Engraulis;Engraulis mordax
 merged_12S_7	37	26	Eukaryota;Chordata;Actinopteri;Centrarchiformes;Kyphosidae;Girella;Girella simplicidens
 merged_12S_8	0	56
 merged_12S_9	0	51	Eukaryota;Chordata;Actinopteri;Pleuronectiformes;Paralichthyidae;Citharichthys;Citharichthys stigmaeus
@@ -22,8 +22,7 @@ merged_12S_13	0	35	Eukaryota;Chordata;Actinopteri;Atheriniformes;Atherinopsidae;
 merged_12S_14	23	0
 merged_12S_15	16	0	Eukaryota;Chordata;Actinopteri;;Embiotocidae;Rhacochilus;Rhacochilus vacca
 merged_12S_16	0	6
-merged_12S_17   1	1	Eukaryota;Chordata;Actinopteri;Cypriniformes;Cyprinidae;Cyprininae;Cyprinus carpio
-merged_12S_18   0	2	Eukaryota;Arthropoda;Crustacea;Malacostraca;Decapoda;Varunidae;Eriocheir sinensis
-merged_12S_19   17	0	Eukaryota;Mollusca;Bivalvia;Heterodonta;Venerida;Cyrenidae;Corbicula fluminea
-merged_12S_20   2	1	Eukaryota;Chordata;Reptilia;Squamata;Serpentes;Colubridae;Nerodia fasciata
-
+merged_12S_17	1	1	Eukaryota;Chordata;Actinopteri;Cypriniformes;Cyprinidae;Cyprininae;Cyprinus carpio
+merged_12S_18	0	2	Eukaryota;Arthropoda;Crustacea;Malacostraca;Decapoda;Varunidae;Eriocheir sinensis
+merged_12S_19	17	0	Eukaryota;Mollusca;Bivalvia;Heterodonta;Venerida;Cyrenidae;Corbicula fluminea
+merged_12S_20	2	1	Eukaryota;Chordata;Reptilia;Squamata;Serpentes;Colubridae;Nerodia fasciata
