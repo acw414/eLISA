@@ -17,7 +17,7 @@ Steps for running the program:
    ```
    quit()
    ```
-3) They should move the taxonomy input file into the eLISA directory (if necessary), navigate into the directory, and type the command:
+3) They should move the taxonomy input file into the eLISA directory (or else, put the path for the file in the command), navigate into the directory, and type the command:
    ```
-   sh eLISA.sh taxonomyinput_file.txt
+   sh eLISA.sh sampleinput_Fish_taxonomy_file.txt
    ```
