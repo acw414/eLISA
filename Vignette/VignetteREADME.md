@@ -2,4 +2,8 @@
 
 **Running eLISA with example datasets**   
 
-The user should first install the originr package
+This document will walk through a sample running of eLISA. 
+
+Steps for running the program:  
+1) The user should first install the (originr package)[https://github.com/ropensci/originr].
+    
