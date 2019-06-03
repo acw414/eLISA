@@ -39,12 +39,7 @@ _______________
 
 **PROJECT TO DO LIST**
   - requirements that the user needs on the bioinformatics end   
-  - ~more comments in the code itself~       
-  - ~add comments to bit saying you're mporting/loading things~   
-  - ~need to start with 'module load R' before starting the program. include in bash script before loading everything.~    
-  - ~need to create the output file~   
-  - ~need to delete the finalsamplecolumn files after the output file finishes - do this in bash script~    
-  - ~need to remove empty lines from finalsamplecolumn files~    
+  - add more comments in the code itself         
   - need a section saying all the requirement for the input file .    
     - say the input file cannot have the string "column" in the filename   
     - say it needs to be a tab-delimited table with semicolons seperating the taxonomic info in the last column    
