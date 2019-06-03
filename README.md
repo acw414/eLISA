@@ -40,7 +40,8 @@ Scott Chamberlain and Ignasi Bartomeus (2018). originr: Fetch Species
 
 _______________
 
-**PROJECT TO DO LIST**
+**PROJECT TO DO LIST**   
+  - add the invasiive species to Fish_taxonomyfile.txt
   - requirements that the user needs on the bioinformatics end   
   - add more comments in the code itself         
   - need a section saying all the requirement for the input file .    
