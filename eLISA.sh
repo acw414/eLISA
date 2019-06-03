@@ -21,7 +21,7 @@ else
     	module load python/3.1
         echo "........."
         echo "sorting input file"
-        python python_eLISA.py $1
+        python Python_eLISA.py $1
         echo "........."
         sed -i '/^$/d' finalsamplecolumn*.txt
         echo "searching species database"
