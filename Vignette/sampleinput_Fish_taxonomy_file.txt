@@ -22,3 +22,7 @@ merged_12S_13	0	35	Eukaryota;Chordata;Actinopteri;Atheriniformes;Atherinopsidae;
 merged_12S_14	23	0
 merged_12S_15	16	0	Eukaryota;Chordata;Actinopteri;;Embiotocidae;Rhacochilus;Rhacochilus vacca
 merged_12S_16	0	6
+merged_12S_17 1	1	Eukaryota;Chordata;Actinopteri;Cypriniformes;Cyprinidae;Cyprininae;Cyprinus carpio
+merged_12S_18 0	2	Eukaryota;Arthropoda;Crustacea;Malacostraca;Decapoda;Varunidae;Eriocheir sinensis
+merged_12S_19 17 0	Eukaryota;Mollusca;Bivalvia;Heterodonta;Venerida;Cyrenidae;Corbicula fluminea
+merged_12S_20 2	1	Eukaryota;Chordata;Reptilia;Squamata;Serpentes;Colubridae;Nerodia fasciata
