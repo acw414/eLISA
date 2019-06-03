@@ -29,6 +29,6 @@ else
         R CMD BATCH R_code.r
         echo "........."
         echo "finalizing output table"
-#	rm ./finalsamplecolumn*
+#	rm ./finalsamplecolumn*.txt
         echo "........."
 fi
