@@ -9,16 +9,18 @@ This process can be done by first collecting samples, extracting and purifying t
 
 eDNA can be used to track the spread of invasive species, which are species that have been introduced, either intentionally or unintentionally, to a region outside their natural range and subsequently caused harm to this new habitat. This is a worthwhile field of study as population booms of invasive species could threaten native species, [disrupt ecosystem functions](https://www.environmentalscience.org/invasive-species), and even cause [millions of dollars worth of damage](https://2001-2009.state.gov/g/oes/ocns/inv/cs/2304.htm).   
 
-**Purpose of the program:**
+### Program Workflow 
 
 The program is designed to make it convenient for biologist to sort through multiple invasive species datasets to retrieve information. The user will be able to identify which species amongst all those present in their eDNA sample are invasive to the sampled area. Additionally, the program will then list the percentage of species that were invasive for each sample site, as well as text detailing the names of each invasive species and some information about where they’re native to. 
 
-**What the user needs installed and dataset format:**
+### Dependencies
 
 The user will need to use UCLA's Hoffman2 server to run this program. /name of our program/ will load Python and R modules, and data analysis will use the [originr](https://github.com/ropensci/originr) package. 
 
 This program will take a taxonomy file from an eDNA sample as the input. The file should split species in different rows, and the number of occurrences at each sampling site in the columns. This program will extract the species present at each sample site, compare them to datasets using originr, and determine whether the species are invasive or not in the country **specified in the input**. The program also returns other statistics depending on the parameters included by the user.
-
+### Instructions
+### Expected output
+### References
 **PROJECT TO DO LIST**
   - requirements that the user needs on the bioinformatics end   
   - ~more comments in the code itself~       
