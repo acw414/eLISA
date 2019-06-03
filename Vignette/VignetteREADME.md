@@ -19,5 +19,5 @@ Steps for running the program:
    ```
 3) They should move the input file into the eLISA directory (if necessary), navigate into the directory, and type the command:
    ```
-   sh eLISA.sh sampleinput_Fish_taxonomy_file.txt
+   sh eLISA.sh taxonomyinput_file.txt
    ```
