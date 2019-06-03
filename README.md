@@ -41,17 +41,15 @@ Scott Chamberlain and Ignasi Bartomeus (2018). originr: Fetch Species
 _______________
 
 **PROJECT TO DO LIST**   
-  - add the invasiive species to Fish_taxonomyfile.txt
-  - requirements that the user needs on the bioinformatics end   
+  - requirements that the user needs on the bioinformatics end - in the dependencies section    
+    - must have originr installed beforehand on R    
+    - must be on Hoffman2   
   - add more comments in the code itself         
   - need a section saying all the requirement for the input file .    
     - say the input file cannot have the string "column" in the filename   
-    - say it needs to be a tab-delimited table with semicolons seperating the taxonomic info in the last column    
-  - make the readme look nice. add the vingette(??) and the other things listed in the project details   
-    - maybe make a flow chart of how the program works idk?   
-  - percent invasive output - x100 and have % sign in the table? - x100 done. Need help with %sign
-  - fix prupose of program and what user need installed
-  - must have originr installed beforehand on R    
+    - say it needs to be a tab-delimited table with semicolons seperating the taxonomic info in the last column       
+  - maybe make a flow chart of how the program works idk?   
+  - percent invasive output - x100 and have % sign in the table? - x100 done. Need help with %sign   
   - say this only works for US within inland range 
   - make our DOI + include how to cite us 
    
