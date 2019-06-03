@@ -12,7 +12,8 @@ Steps for running the program:
       R
         > install.packages("originr")
        ```
-   - The package may take up to 10 minutes to install, please do not close R or the terminal window. 
+   - The package may take up to 10 minutes to install, please do not close R or the terminal window.
+   - After the user has installed OriginR once, they should skip this step for future use of eLISA.
 2) Then the user should then close R:
    ```
    quit()
