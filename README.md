@@ -50,7 +50,6 @@ _______________
   - need a section saying all the requirement for the input file .    
     - say the input file cannot have the string "column" in the filename   
     - say it needs to be a tab-delimited table with semicolons seperating the taxonomic info in the last column       
-  - maybe make a flow chart of how the program works idk?     
   - say this only works for US within inland range 
   - make our DOI + include how to cite us 
    
