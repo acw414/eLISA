@@ -1,4 +1,4 @@
-# README
+# eLISA
 
 ## Welcome to eLISA, the eDNA List Invasive Species Analyzer!   
 ***Written by Anna Weir (annacxweir@gmail.com) and Sohil Joshi (sohiljoshi.email@gmail.com)***   
