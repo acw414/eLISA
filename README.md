@@ -52,6 +52,7 @@ _______________
     - say it needs to be a tab-delimited table with semicolons seperating the taxonomic info in the last column       
   - say this only works for US within inland range 
   - make our DOI + include how to cite us 
+  - say what part of origin r we are using : which functions/features. which databases do they analyze? what info do these databases have?   
    
 ***How the README should be structured***            
 rubric : https://github.com/pceeb/UCLA_Spring_2019/blob/master/Term_project/Rubric.md    
