@@ -25,6 +25,7 @@ else
         echo "........."
         sed -i '/^$/d' finalsamplecolumn*.txt
         echo "Searching species database"
+        echo "........."
         module load R/3.4.0
         Rscript R_eLISA.r
         echo "........."
