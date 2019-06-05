@@ -5,7 +5,7 @@
 This document will walk through a sample running of eLISA. 
 
 Steps for running the program:  
-1) The user should first install the [originr package](https://github.com/ropensci/originr) in R.
+1) The user should first **install the [originr package](https://github.com/ropensci/originr)** in R.
    - Log into the UCLA Hoffman2 server and type:
        ```
       module load R
@@ -18,12 +18,12 @@ Steps for running the program:
        ```
        quit()
        ```
-2) The user can clone the eLISA repository to Hoffman2 by typing the following into the command line:
+2) The user can **clone the eLISA directory to Hoffman2** by typing the following into the command line:
    ```
    git clone https://github.com/acw414/eLISA.git
    ```
 
-3) The user should **copy sampleinput_Fish_taxonomy_file.txt to the main eLISA directory**
+3) To run the sample data set the user should **copy sampleinput_Fish_taxonomy_file.txt to the main eLISA directory**
 
 4) Finally, the user needs to **navigate to the main eLISA directory** and type into the command line:
    ```
