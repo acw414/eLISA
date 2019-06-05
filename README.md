@@ -32,7 +32,7 @@ eLISA runs on UCLA's Hoffman2 Cluster, and requires the use of Python(3 or above
 
 Additionally, eLISA uses the [originr](https://github.com/ropensci/originr) R package to query the [Global Invasive Species Database](http://www.iucngisd.org/gisd/). This program only uses the [*gisd(sp)*](https://github.com/ropensci/originr/blob/master/R/gisd.R) function for access to the aformentioned database.
 
-***First time users*** must **install originr** package in R, which can be done in the command liny by typing: 
+**_First time users_** must **install originr** package in R, which can be done in the command liny by typing: 
 ```
 module load R
 R
@@ -42,7 +42,7 @@ Please give the system 10-15 minutes for this installation. Please do not close 
 ```
 quit()
 ```
-***UCLA Hoffman users only*** : Python and R are already installed on the server, but must be loaded. After retrieving a compute node, the user must type the following in order to **load R**:
+**_UCLA Hoffman users only_** : Python and R are already installed on the server, but must be loaded. After retrieving a compute node, the user must type the following in order to **load R**:
 ```
 module load R
 ```
