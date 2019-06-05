@@ -32,7 +32,7 @@ eLISA runs on UCLA's Hoffman2 Cluster, and requires the use of Python(3 or above
 
 Additionally, eLISA uses the [originr](https://github.com/ropensci/originr) R package to query the [Global Invasive Species Database](http://www.iucngisd.org/gisd/). This program only uses the [*gisd(sp)*](https://github.com/ropensci/originr/blob/master/R/gisd.R) function for access to the aformentioned database.
 
-**__First time users__** must **install originr** package in R, which can be done in the command liny by typing: 
+**__First time users__** must **install originr** package in R, which can be done in the command line by typing: 
 ```
 module load R
 R
@@ -59,19 +59,18 @@ There are a number of **requirements for the input file** that, if not met, coul
 
 1) If the user is **running eLISA for the first time**, they should start by installing the originr package by following the instructions under the **Dependencies** section. Skip this step if originr is already installed.   
 
-2) The user can **clone the eLISA repository to Hoffman2** by typing:
+2) The user can **clone the eLISA repository to Hoffman2** by typing the following into the command line:
 ```
 git clone https://github.com/acw414/eLISA.git
 ```
-into Hoffman2. This should make a copy of this repository. 
 
-3) The user should **copy their input file into the eLISA/Scripts directory**
+3) The user should then **copy their input file into the eLISA/Scripts directory**
 
-4) **To run eLISA**, the user should **navigate into the eLISA/Scripts directory**, and type:  
+4) **To run eLISA**, the user should first **navigate into the eLISA/Scripts directory** then type:  
 ```
 sh eLISA.sh inputfile.txt
 ```
-where inputfile.txt is the name of the user's own input file.
+(where inputfile.txt is the name of the user's own input file)
 
 ## Expected Output
 
