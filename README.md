@@ -74,11 +74,9 @@ eLISA produces text file named *results.csv* which contains a table. This table 
 
 ![alt text](https://github.com/sohil2710/spring2019_-/blob/master/Screen%20Shot%202019-06-05%20at%2012.08.22%20AM.png)
 
-In order to see the results in a clear and tabular form, we recommend the user to open results.csv with Mircosoft Excel or [R studio](https://www.rstudio.com/) by doing the following:
+In order to see the results in a clear and tabular form, we recommend the user to open results.csv with Mircosoft Excel or a text editor by right clicking on it and selecting *open with* followed by your application on choice.
 
-![alt text](https://github.com/sohil2710/spring2019_-/blob/master/Screen%20Shot%202019-06-05%20at%2012.29.01%20AM.png)
-
-Here is what *results.csv* looks like in Excel:
+Here is what the file looks like in Excel:
 
 ![alt text](https://github.com/sohil2710/spring2019_-/blob/master/Screen%20Shot%202019-06-05%20at%2012.40.38%20AM.png)
 
@@ -106,17 +104,4 @@ _______________
 **PROJECT TO DO LIST**   
   - add more comments in the code itself 
   - make our DOI + include how to cite us 
-    
-   
-***How the README should be structured***            
-rubric : https://github.com/pceeb/UCLA_Spring_2019/blob/master/Term_project/Rubric.md    
-
-**The Readme (125 pts)**       
-
-**Introduction:** This section indicates the purpose of the program and provides background and a justification for why the program was created.    
-**Program Workflow:** This section provides an operation overview of what the program does. A flowchart or some other diagram might be helpful, but is not required.     
-**Dependencies:** To run a program users may need to have dependencies installed. Indicate which dependencies are required for you program.   
-**Instructions:** You need to indicate how your program is run.    
-**Expected Output:** Describe the files and or directories will be produced by your program.   
-**References:** Cite pertinent studies or programs that you used to develop your program(s).   
 
