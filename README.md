@@ -14,33 +14,35 @@ eLISA is designed to aid in this laborious task. The program takes the output of
 
 ## Program Workflow 
 
-The user provides a .txt file containing eDNA sample reads and taxonomic data as an input, and eLISA will extract the species present at each sample site, check them against invasive species databases using originr, and output a file detailing the invasive species in each sample.  
+The user provides a .txt file containing eDNA sample reads and taxonomic data as an input, and eLISA will extract the species present at each sample site, check them against invasive species databases using originr, and output a file detailing the invasive species in each sample. 
+
+eLISA is comprised of a Python script (***Python_eLISA.py***), which sorts through the file and extracts species names, and an R script (***R_eLISA.r***), which searches the Global Invasive Species Database and creates the output. These two scripts are run by using the bash masterscript (***eLISA.sh***).
 
 ![alt text](https://github.com/acw414/eLISA/blob/master/project_workflow.jpg "Program Workflow")   
 
 **eLISA will list a number of status messages while completing tasks:**
 - *Sorting input file* will be shown as eLISA goes through the input file and creates a temporary file per sample
 - *Searching species database* will show when eLISA moves onto the R part of the script and searches the Global Invasive Species Database
-- *Checking <species name>* is a status message from originr, and will show each species as it is checked through the system
+- *Checking species_name* is a status message from originr, and will show each species as it is checked through the system
 - *Finalizing output* means eLISA is almost finished and will delete all temporary files   
   
 ## Dependencies
 
 eLISA runs on UCLA's Hoffman2 Cluster, and requires the use of Python(3 or above) and R. If your computer or server does not have [Python](https://www.python.org/downloads/) and [R](https://cran.r-project.org/mirrors.html) dowloaded, then please click the link embeded. 
 
-Additionally, eLISA uses the R package - [originr](https://github.com/ropensci/originr) to query the [Global Invasive Species Database](http://www.iucngisd.org/gisd/). This program only uses the [*gisd(sp)*](https://github.com/ropensci/originr/blob/master/R/gisd.R) function for access to the aformentioned database.
+Additionally, eLISA uses the [originr](https://github.com/ropensci/originr) R package to query the [Global Invasive Species Database](http://www.iucngisd.org/gisd/). This program only uses the [*gisd(sp)*](https://github.com/ropensci/originr/blob/master/R/gisd.R) function for access to the aformentioned database.
 
-**First time users** must install this package in R. Go to your command line and type:
+***First time users*** must **install originr** package in R, which can be done in the command liny by typing: 
 ```
 module load R
 R
   > install.packages("originr")
 ```
-Please give the system 10-15 minutes for this install. Please do not close your terminal or disconnect from the internet until the installation is complete and you see the prompt from R again. Proceed to quit R by typing:
+Please give the system 10-15 minutes for this installation. Please do not close your terminal or disconnect from the internet until installation is complete and you see the prompt from R again. Proceed to quit R by typing:
 ```
 quit()
 ```
-**UCLA Hoffman users only** : Python and R are already installed on the server. After retrieving a compute node, the user must type the following in order to load R:
+***UCLA Hoffman users only*** : Python and R are already installed on the server, but must be loaded. After retrieving a compute node, the user must type the following in order to **load R**:
 ```
 module load R
 ```
@@ -51,7 +53,6 @@ There are a number of **requirements for the input file** that, if not met, coul
 - The file must be organized into columns 
 - The taxonomic data in the final column must use semicolons (;) to seperate taxonomic ranks  
 - The name of the input file cannot have the string "column" in it    
-
 
 
 ## Instructions 
