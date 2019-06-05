@@ -24,26 +24,26 @@ The user will need to use UCLA's Hoffman2 server to run this program.
 eLISA will load Python and R modules, and data analysis will use the [originr](https://github.com/ropensci/originr) package. 
 
 
-### Instructions
-*You need to indicate how your program is run.*    
+### Instructions 
 
-Before running eLISA, there are a few **requirements for the input file**:
+1) If the user is **running eLISA for the first time**, they should start by installing the originr package (please see Dependencies). Please skip this step if originr is already installed. 
+
+2) The user can **clone the eLISA repository to Hoffman2** by typing:
+```
+git clone https://github.com/acw414/eLISA.git
+```
+3) The user should then move their input file into the eLISA directory, navigate into the directory, and type:
+```
+sh eLISA.sh inputfile.txt
+```
+where inputfile.txt is the name of the user's own input file. This will run eLiSA. 
+
+There are a number of **requirements for the input file** that, if not met, could impact eLISA's performance:
 - The file must be a .txt file of eDNA sample reads and taxonomic data (see /Vignette/sampleinput_Fish_taxonomy_file.txt for an example)  
 - The file must be organized into columns 
 - The taxonomic data in the final column must use semicolons (;) to seperate taxonomic ranks  
 - The name of the input file cannot have the string "column" in it   
 
-If the user is running eLISA for the first time, they should start by installing the originr package and loading R (see dependencies)
-
-To get eLISA onto Hoffman2, the user should git clone this repository by typing:
-```
-git clone https://github.com/acw414/eLISA.git
-```
-The user should then move their input file into the eLISA directory, navigate into the directory, and type:
-```
-sh eLISA.sh inputfile.txt
-```
-(where inputfile.txt is the name of the user's own input file)  
 
 ### Expected output
 *Describe the files and or directories will be produced by your program.*   
