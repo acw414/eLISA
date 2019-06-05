@@ -14,20 +14,36 @@ eLISA is designed to aid in this laborious task. The program takes the output of
 
 ### Program Workflow 
 
-The user provides a .txt file containing eDNA sample reads and taxonomic data as an input, and eLISA goes through the file in the following ways:  
+The user provides a .txt file containing eDNA sample reads and taxonomic data as an input, and eLISA will extract the species present at each sample site, check them against invasive species databases using originr, and output a file detailing the invasive species in each sample. The program is only set to check for species that are invasive within the US inland range. 
 
 ![alt text](https://github.com/acw414/eLISA/blob/master/project_workflow.jpg "Program Workflow")   
 
 ### Dependencies
-*This section provides an operation overview of what the program does. A flowchart or some other diagram might be helpful, but is not required.* 
 
-The user will need to use UCLA's Hoffman2 server to run this program. /name of our program/ will load Python and R modules, and data analysis will use the [originr](https://github.com/ropensci/originr) package. 
+The user will need to use UCLA's Hoffman2 server to run this program. 
+eLISA will load Python and R modules, and data analysis will use the [originr](https://github.com/ropensci/originr) package. 
 
-This program will take a taxonomy file from an eDNA sample as the input. The file should split species in different rows, and the number of occurrences at each sampling site in the columns. This program will extract the species present at each sample site, compare them to datasets using originr, and determine whether the species are invasive or not in the country **specified in the input**. The program also returns other statistics depending on the parameters included by the user.
 
 ### Instructions
 *You need to indicate how your program is run.*    
 
+Before running eLISA, there are a few **requirements for the input file**:
+- The file must be a .txt file of eDNA sample reads and taxonomic data (see /Vignette/sampleinput_Fish_taxonomy_file.txt for an example)  
+- The file must be organized into columns 
+- The taxonomic data in the final column must use semicolons (;) to seperate taxonomic ranks  
+- The name of the input file cannot have the string "column" in it   
+
+If the user is running eLISA for the first time, they should start by installing the originr package and loading R (see dependencies)
+
+To get eLISA onto Hoffman2, the user should git clone this repository by typing:
+```
+git clone https://github.com/acw414/eLISA.git
+```
+The user should then move their input file into the eLISA directory, navigate into the directory, and type:
+```
+sh eLISA.sh inputfile.txt
+```
+(where inputfile.txt is the name of the user's own input file)  
 
 ### Expected output
 *Describe the files and or directories will be produced by your program.*   
@@ -43,16 +59,16 @@ Scott Chamberlain and Ignasi Bartomeus (2018). originr: Fetch Species
 _______________
 
 **PROJECT TO DO LIST**   
-  - requirements that the user needs on the bioinformatics end - in the dependencies section    
+  - EXPECTED OUTPUT section
+  - DEPENDENCIES: requirements that the user needs on the bioinformatics end     
     - must be on UCLA's Hoffman2   
     - must have originr installed beforehand on R (+ instructions of how to install it on Hoffman2)    
-  - add more comments in the code itself         
-  - need a section saying all the requirement for the input file .    
-    - say the input file cannot have the string "column" in the filename   
-    - say it needs to be a tab-delimited table with semicolons seperating the taxonomic info in the last column       
+    - say what part of origin r we are using : which functions/features. which databases do they analyze? what info do these databases have?
+    - can be the same as the readme bits in the vignette?            
   - say this only works for US within inland range 
+  - add more comments in the code itself 
   - make our DOI + include how to cite us 
-  - say what part of origin r we are using : which functions/features. which databases do they analyze? what info do these databases have?   
+    
    
 ***How the README should be structured***            
 rubric : https://github.com/pceeb/UCLA_Spring_2019/blob/master/Term_project/Rubric.md    
