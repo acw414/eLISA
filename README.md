@@ -64,13 +64,14 @@ There are a number of **requirements for the input file** that, if not met, coul
 git clone https://github.com/acw414/eLISA.git
 ```
 
-3) The user should then **copy their input file into the eLISA/Scripts directory**
+3) eLISA will only work if the input file and scripts are all in the same directory. Therefore the user should then **copy their input file into eLISA/Scripts**
 
-4) **To run eLISA**, the user should first **navigate into the eLISA/Scripts directory** then type:  
+4) **To run eLISA**, the user should **navigate into the eLISA/Scripts directory** then type:  
 ```
 sh eLISA.sh inputfile.txt
 ```
 (where inputfile.txt is the name of the user's own input file)
+
 
 ## Expected Output
 
