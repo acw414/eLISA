@@ -18,25 +18,33 @@ The user provides a .txt file containing eDNA sample reads and taxonomic data as
 
 ![alt text](https://github.com/acw414/eLISA/blob/master/project_workflow.jpg "Program Workflow")   
 
+eLISA will list a number of status messages while completing its tasks:
+- *Sorting input file* will be shown as eLISA goes through the input file and creates a temporary file per sample
+- *Searching species database* will show when eLISA moves onto the R part of the script and searches the Global Invasive Species Database
+- *Checking <species name>* is a status message from originr, and will show each species as it is checked through the system
+- *Finalizing output* means eLISA is almost finished and will delete all temporary files   
+  
 ### Dependencies
 
-The user will need to use UCLA's Hoffman2 server to run this program. 
+The user will need to use UCLA's Hoffman2 Cluster to run this program. 
 eLISA will load Python and R modules, and data analysis will use the [originr](https://github.com/ropensci/originr) package. 
 
 
 ### Instructions 
 
-1) If the user is **running eLISA for the first time**, they should start by installing the originr package (please see Dependencies). Please skip this step if originr is already installed. 
+1) If the user is **running eLISA for the first time**, they should start by installing the originr package. Skip this step if originr is already installed.   
 
 2) The user can **clone the eLISA repository to Hoffman2** by typing:
 ```
 git clone https://github.com/acw414/eLISA.git
 ```
-3) The user should then move their input file into the eLISA directory, navigate into the directory, and type:
+into Hoffman2. This should make a copy of this repository. 
+
+3) **To run eLISA** the user should move their input file into the eLISA directory, navigate into the directory, and type:  
 ```
 sh eLISA.sh inputfile.txt
 ```
-where inputfile.txt is the name of the user's own input file. This will run eLiSA. 
+where inputfile.txt is the name of the user's own input file.
 
 There are a number of **requirements for the input file** that, if not met, could impact eLISA's performance:
 - The file must be a .txt file of eDNA sample reads and taxonomic data (see /Vignette/sampleinput_Fish_taxonomy_file.txt for an example)  
