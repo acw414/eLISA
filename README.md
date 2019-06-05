@@ -12,7 +12,7 @@ eDNA analysis can also track the spread of invasive species; species which have 
 eLISA is designed to aid in this laborious task. The program takes the output of an eDNA analysis, searches through the Global Invasive Species Database, and provides the user with a sample-by-sample breakdown of the identified invasive species. eLISA   is meant to make eDNA analysis as convenient as possible, and can identify the invasive species in a table of hundreds in a matter of minutes.   
 
 
-### Program Workflow 
+## Program Workflow 
 
 The user provides a .txt file containing eDNA sample reads and taxonomic data as an input, and eLISA will extract the species present at each sample site, check them against invasive species databases using originr, and output a file detailing the invasive species in each sample. The program is only set to check for species that are invasive within the US inland range. 
 
@@ -24,12 +24,12 @@ The user provides a .txt file containing eDNA sample reads and taxonomic data as
 - *Checking <species name>* is a status message from originr, and will show each species as it is checked through the system
 - *Finalizing output* means eLISA is almost finished and will delete all temporary files   
   
-### Dependencies
+## Dependencies
 
 The user will need to use UCLA's Hoffman2 Cluster to run this program. 
 eLISA will load Python and R modules, and data analysis will use the [originr](https://github.com/ropensci/originr) package. 
 
-### Instructions 
+## Instructions 
 
 1) If the user is **running eLISA for the first time**, they should start by installing the originr package. Skip this step if originr is already installed.   
 
@@ -52,11 +52,11 @@ There are a number of **requirements for the input file** that, if not met, coul
 - The name of the input file cannot have the string "column" in it   
 
 
-### Expected output
+## Expected output
 *Describe the files and or directories will be produced by your program.*   
 what the table looks like. how the user should view it   
 
-### References
+## References
 
 Scott Chamberlain and Ignasi Bartomeus (2018). originr: Fetch Species  
   Origin Data from the Web. R package version 0.3.0.
