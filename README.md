@@ -14,8 +14,6 @@ eLISA is designed to aid in this laborious task. The program takes the output of
 
 ### Program Workflow 
 
-The program is designed to make it convenient for biologist to sort through multiple invasive species datasets to retrieve information. The user will be able to identify which species amongst all those present in their eDNA sample are invasive to the sampled area. Additionally, the program will then list the percentage of species that were invasive for each sample site, as well as text detailing the names of each invasive species and some information about where they’re native to. 
-
 ![alt text](https://github.com/acw414/eLISA/blob/master/project_workflow.jpg "Program Workflow")   
 
 ### Dependencies
