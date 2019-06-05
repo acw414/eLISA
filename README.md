@@ -78,7 +78,7 @@ eLISA produces a text file named *results.csv* which contains a table. This tabl
 
 ![alt text](https://github.com/sohil2710/spring2019_-/blob/master/Screen%20Shot%202019-06-05%20at%2012.08.22%20AM.png)
 
-In order to see the results in a clear and tabular form, we recommend that the user should open results.csv with Mircosoft Excel or a text editor. Right click on it and select *open with*, followed by your application of choice.
+In order to see the results in a clear and tabular form, we recommend that the user should open results.csv with Mircosoft Excel or a text editor. Right click on the file and select *open with*, followed by your application of choice.
 
 Here is what the file looks like in Excel:
 
