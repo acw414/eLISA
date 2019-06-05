@@ -26,13 +26,15 @@ The user provides a .txt file containing eDNA sample reads and taxonomic data as
   
 ## Dependencies
 
-eLISA requires the use of Python(3 and above) and R. If your computer or server does not have [Python](https://www.python.org/downloads/) and [R](https://cran.r-project.org/mirrors.html) dowloaded, then please click the link embeded. 
+eLISA runs on UCLA's Hoffman2 Cluster, and requires the use of Python(3 or above) and R. If your computer or server does not have [Python](https://www.python.org/downloads/) and [R](https://cran.r-project.org/mirrors.html) dowloaded, then please click the link embeded. 
 
 Additionally, eLISA uses the R package - [originr](https://github.com/ropensci/originr) to query the [Global Invasive Species Database](http://www.iucngisd.org/gisd/). This program only uses the [*gisd(sp)*](https://github.com/ropensci/originr/blob/master/R/gisd.R) function for access to the aformentioned database.
 
-**First time users** must install this package in R. Go to your command line and type 'R' to load R. Once you are given the prompt type:
+**First time users** must install this package in R. Go to your command line and type:
 ```
-install.packages("originr")
+module load R
+R
+  > install.packages("originr")
 ```
 Please give the system 10-15 minutes for this install. Please do not close your terminal or disconnect from the internet until the installation is complete and you see the prompt from R again. Proceed to quit R by typing:
 ```
