@@ -9,7 +9,7 @@ eDNA can therefore identify any species that have passed through a particular en
 
 eDNA analysis can also track the spread of invasive species; species which have been introduced, either intentionally or unintentionally, to a region outside their natural range and have subsequently caused harm to this new habitat. This is a worthwhile field of study as population booms of invasive species could threaten native species, [disrupt ecosystem functions](https://www.environmentalscience.org/invasive-species), and even cause [millions of dollars worth of damage](https://2001-2009.state.gov/g/oes/ocns/inv/cs/2304.htm). However, eDNA analyses can identify hundreds of unique DNA reads per sample, and verifying each unique species in invasive species databases would be monotonous and time-consuming.   
 
-eLISA is designed to aid in this laborious task. The program takes the output of an eDNA analysis, searches through an online invasive species database, and provides the user with a sample-by-sample breakdown of the identified invasive species. eLISA   is meant to make eDNA analysis as convenient as possible, and can identify the invasive species in a table of hundreds in a matter of minutes.   
+eLISA is designed to aid in this laborious task. The program takes the output of an eDNA analysis, searches through the Global Invasive Species Database, and provides the user with a sample-by-sample breakdown of the identified invasive species. eLISA   is meant to make eDNA analysis as convenient as possible, and can identify the invasive species in a table of hundreds in a matter of minutes.   
 
 
 ### Program Workflow 
@@ -57,11 +57,15 @@ There are a number of **requirements for the input file** that, if not met, coul
 what the table looks like. how the user should view it   
 
 ### References
-*Describe the files and or directories will be produced by your program.*  
 
 Scott Chamberlain and Ignasi Bartomeus (2018). originr: Fetch Species  
   Origin Data from the Web. R package version 0.3.0.
   https://CRAN.R-project.org/package=originr
+
+
+
+
+
 
 _______________
 
