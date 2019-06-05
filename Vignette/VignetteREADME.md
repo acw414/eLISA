@@ -24,7 +24,7 @@ Steps for running the program:
    git clone https://github.com/acw414/eLISA.git
    ```
 
-3) To run the sample data set the user should **copy sampleinput_Fish_taxonomy_file.txt to the main eLISA directory**
+3) To run the sample data set the user should **copy** sampleinput_Fish_taxonomy_file.txt to the main eLISA directory**
 
 4) Finally, the user needs to **navigate to the main eLISA directory** and type into the command line:
    ```
