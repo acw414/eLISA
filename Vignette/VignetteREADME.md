@@ -1,6 +1,6 @@
 # Vignette ReadMe
 
-##Running eLISA with an example dataset   
+## Running eLISA with an example dataset   
 
 This document will walk through the steps for running a sample dataset through eLISA. 
 
