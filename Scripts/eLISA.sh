@@ -21,13 +21,13 @@ else
     	module load python/3.1
         echo "........."
         echo "Sorting input file"
-        python Python_eLISA.py $1
+        python ./Scripts/Python_eLISA.py $1
         echo "........."
         sed -i '/^$/d' finalsamplecolumn*.txt
         echo "Searching species database"
         echo "........."
         module load R/3.4.0
-        Rscript R_eLISA.r
+        Rscript ./Scripts/R_eLISA.r
         echo "........."
         echo "Finalizing output"
 	rm ./finalsamplecolumn*.txt
