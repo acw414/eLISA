@@ -1,10 +1,9 @@
 # Vignette ReadMe
 
-**Running eLISA with example datasets**   
+##Running eLISA with an example dataset   
 
-This document will walk through a sample running of eLISA. 
+This document will walk through the steps for running a sample dataset through eLISA. 
 
-Steps for running the program:  
 1) The user should first **install the [originr package](https://github.com/ropensci/originr)** in R.
    - Log into the UCLA Hoffman2 server and type:
        ```
@@ -24,7 +23,7 @@ Steps for running the program:
    git clone https://github.com/acw414/eLISA.git
    ```
 
-3) To run the sample data set the user should **copy** sampleinput_Fish_taxonomy_file.txt to the main eLISA directory**
+3) To run the sample data set the user should **copy** sampleinput_Fish_taxonomy_file.txt to the main eLISA directory
 
 4) Finally, the user needs to **navigate to the main eLISA directory** and type into the command line:
    ```
