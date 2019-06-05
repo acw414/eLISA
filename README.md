@@ -18,7 +18,7 @@ The user provides a .txt file containing eDNA sample reads and taxonomic data as
 
 ![alt text](https://github.com/acw414/eLISA/blob/master/project_workflow.jpg "Program Workflow")   
 
-eLISA will list a number of status messages while completing its tasks:
+**eLISA will list a number of status messages while completing tasks:**
 - *Sorting input file* will be shown as eLISA goes through the input file and creates a temporary file per sample
 - *Searching species database* will show when eLISA moves onto the R part of the script and searches the Global Invasive Species Database
 - *Checking <species name>* is a status message from originr, and will show each species as it is checked through the system
@@ -28,7 +28,6 @@ eLISA will list a number of status messages while completing its tasks:
 
 The user will need to use UCLA's Hoffman2 Cluster to run this program. 
 eLISA will load Python and R modules, and data analysis will use the [originr](https://github.com/ropensci/originr) package. 
-
 
 ### Instructions 
 
