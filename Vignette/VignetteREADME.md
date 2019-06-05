@@ -2,7 +2,7 @@
 
 ## Running eLISA with an example dataset   
 
-This document will walk through the steps for running a sample dataset through eLISA. 
+This document will walk through the steps for running an example dataset through eLISA. 
 
 1) The user should first **install the [originr package](https://github.com/ropensci/originr)** in R.
    - Log into the UCLA Hoffman2 server and type:
