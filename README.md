@@ -55,7 +55,7 @@ git clone https://github.com/acw414/eLISA.git
 ```
 into Hoffman2. This should make a copy of this repository. 
 
-3) **To run eLISA** the user should move their input file into the eLISA directory, navigate into the directory, and type:  
+3) **To run eLISA** the user should move their input file into the eLISA/Scripts directory, navigate into this directory, and type:  
 ```
 sh eLISA.sh inputfile.txt
 ```
