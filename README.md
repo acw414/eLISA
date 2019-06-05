@@ -84,11 +84,11 @@ Here is what the file looks like in Excel:
 
 ![alt text](https://github.com/sohil2710/spring2019_-/blob/master/Screen%20Shot%202019-06-05%20at%2012.40.38%20AM.png)
 
-**UCLA Hoffman users**: In order to view the file in with another software like Excel, the user must copy the file on to their computer before proceeding with the instructions above. Do this by typing:
+**UCLA Hoffman users**: In order to view results.csv with another software like Excel, the user must copy the file to a local folder on their computer before proceeding with the instructions above. Do this by typing:
 ```
-scp c177-xx@hoffman2.idre.ucla.edu:/u/home/class/c177/c177-xx/eLISA/results.csv *path to location on your computer*
+scp c177-xx@hoffman2.idre.ucla.edu:/u/home/class/c177/c177-xx/eLISA/Scripts/results.csv *path to location on your computer*
 ```
-Remember to replace the part after 'scp' with your own login and the path to results on Hoffman.
+Remember to replace the part after 'scp' with your own login and the path to results.csv on Hoffman.
 
 
 
