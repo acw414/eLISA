@@ -76,7 +76,7 @@ eLISA produces text file named *results.csv* which contains a table. This table 
 
 We recommend the user to open results.csv with Mircosoft Excel or [R studio](https://www.rstudio.com/) by doing the following:
 
-![alt text](https://github.com/acw414/eLISA/blob/master/Vignette/results.csv)
+![alt text](https://github.com/sohil2710/spring2019_-/blob/master/Screen%20Shot%202019-06-05%20at%2012.18.08%20AM.png)
 
 ## References
 
