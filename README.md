@@ -47,7 +47,7 @@ Please follow the instructions above in order to install the originr package and
 
 ## Instructions 
 
-1) If the user is **running eLISA for the first time**, they should start by installing the originr package. Skip this step if originr is already installed.   
+1) If the user is **running eLISA for the first time**, they should start by installing the originr package by following the instructions under the **Dependencies** section. Skip this step if originr is already installed.   
 
 2) The user can **clone the eLISA repository to Hoffman2** by typing:
 ```
