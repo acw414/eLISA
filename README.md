@@ -86,7 +86,7 @@ Here is what the file looks like in Excel:
 
 **UCLA Hoffman users**: In order to view results.csv with another software like Excel, the user must copy the file to a local folder on their computer before proceeding with the instructions above. Do this by typing:
 ```
-scp c177-xx@hoffman2.idre.ucla.edu:/u/home/class/c177/c177-xx/eLISA/Scripts/results.csv *path to location on your computer*
+scp c177-xx@hoffman2.idre.ucla.edu:/u/home/class/c177/c177-xx/eLISA/Scripts/results.csv path_to_local_folder
 ```
 Remember to replace the part after 'scp' with your own login and the path to results.csv on Hoffman.
 
