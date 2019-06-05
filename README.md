@@ -32,7 +32,7 @@ eLISA runs on UCLA's Hoffman2 Cluster, and requires the use of Python(3 or above
 
 Additionally, eLISA uses the [originr](https://github.com/ropensci/originr) R package to query the [Global Invasive Species Database](http://www.iucngisd.org/gisd/). This program only uses the [*gisd(sp)*](https://github.com/ropensci/originr/blob/master/R/gisd.R) function for access to the aformentioned database.
 
-**_First time users_** must **install originr** package in R, which can be done in the command liny by typing: 
+**__First time users__** must **install originr** package in R, which can be done in the command liny by typing: 
 ```
 module load R
 R
@@ -42,7 +42,7 @@ Please give the system 10-15 minutes for this installation. Please do not close 
 ```
 quit()
 ```
-**_UCLA Hoffman users only_** : Python and R are already installed on the server, but must be loaded. After retrieving a compute node, the user must type the following in order to **load R**:
+**__UCLA Hoffman users only__** : Python and R are already installed on the server, but must be loaded. After retrieving a compute node, the user must type the following into the command line in order to **load R**:
 ```
 module load R
 ```
@@ -67,7 +67,7 @@ into Hoffman2. This should make a copy of this repository.
 
 3) The user should **copy their input file into the eLISA/Scripts directory**
 
-4) **To run eLISA**, the user should **navigate into eLISA/Scripts**, and type:  
+4) **To run eLISA**, the user should **navigate into the eLISA/Scripts directory**, and type:  
 ```
 sh eLISA.sh inputfile.txt
 ```
@@ -85,7 +85,7 @@ Here is what the file looks like in Excel:
 
 ![alt text](https://github.com/sohil2710/spring2019_-/blob/master/Screen%20Shot%202019-06-05%20at%2012.40.38%20AM.png)
 
-**UCLA Hoffman users**: In order to view the file in with another software like Excel, the user must copy the file on to their computer before proceeding with the instructions above. Remember to do this by typing:
+**UCLA Hoffman users**: In order to view the file in with another software like Excel, the user must copy the file on to their computer before proceeding with the instructions above. Do this by typing:
 ```
 scp c177-xx@hoffman2.idre.ucla.edu:/u/home/class/c177/c177-xx/eLISA/results.csv *path to location on your computer*
 ```
