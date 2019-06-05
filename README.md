@@ -70,11 +70,11 @@ There are a number of **requirements for the input file** that, if not met, coul
 
 ## Expected output
 
-eLISA produces text file named *results.csv* which contains a table. This table has 5 columns - Sample(name of the sample), Count(total species), Invasive(# of invasive species), Percentage(% of invasive species), and Invasive_Species(list of invasive species). The number of rows in the result depends on the number of samples in the input eDNA file. Here is what *results.csv* looks like in terminal:
+eLISA produces a text file named *results.csv* which contains a table. This table has 5 columns - Sample(name of the sample), Count(total species), Invasive(# of invasive species), Percentage(% of invasive species), and Invasive_Species(list of invasive species). The number of rows in the result depends on the number of samples in the input eDNA file. Here is what *results.csv* looks like in terminal:
 
 ![alt text](https://github.com/sohil2710/spring2019_-/blob/master/Screen%20Shot%202019-06-05%20at%2012.08.22%20AM.png)
 
-In order to see the results in a clear and tabular form, we recommend the user to open results.csv with Mircosoft Excel or a text editor by right clicking on it and selecting *open with* followed by your application on choice.
+In order to see the results in a clear and tabular form, we recommend the user to open results.csv with Mircosoft Excel or a text editor by right clicking on it and selecting *open with*, followed by your application on choice.
 
 Here is what the file looks like in Excel:
 
@@ -84,7 +84,7 @@ Here is what the file looks like in Excel:
 ```
 scp c177-23@hoffman2.idre.ucla.edu:/u/home/class/c177/c177-xx/eLISA/results.csv *path to location on your computer*
 ```
-Remember to replace the part after 'scp' with your own login and path to results on Hoffman.
+Remember to replace the part after 'scp' with your own login and the path to results on Hoffman.
 
 
 
