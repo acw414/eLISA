@@ -30,7 +30,7 @@ eLISA requires the use of Python(3 and above) and R. If your computer or server 
 
 Additionally, eLISA uses the R package - [originr](https://github.com/ropensci/originr) to query the [Global Invasive Species Database](http://www.iucngisd.org/gisd/). This program only uses the [*gisd(sp)*](https://github.com/ropensci/originr/blob/master/R/gisd.R) function for access to the aformentioned database.
 
-**First time users** must install this package in R. Go to your command line and type 'R' to load the R. Once you are given the prompt type:
+**First time users** must install this package in R. Go to your command line and type 'R' to load R. Once you are given the prompt type:
 ```
 install.packages("originr")
 ```
@@ -69,8 +69,14 @@ There are a number of **requirements for the input file** that, if not met, coul
 
 
 ## Expected output
-*Describe the files and or directories will be produced by your program.*   
-what the table looks like. how the user should view it   
+
+eLISA produces text file named *results.csv* which contains a table. This table has 5 columns - Sample(name of the sample), Count(total species), Invasive(# of invasive species), Percentage(% of invasive species), and Invasive_Species(list of invasive species). The number of rows in the result depends on the number of samples in the input eDNA file. Here is what *results.csv* looks like in terminal:
+
+![alt text](https://github.com/sohil2710/spring2019_-/blob/master/Screen%20Shot%202019-06-05%20at%2012.08.22%20AM.png)
+
+We recommend the user to open results.csv with Mircosoft Excel or [R studio](https://www.rstudio.com/) by doing the following:
+
+![alt text](https://github.com/acw414/eLISA/blob/master/Vignette/results.csv)
 
 ## References
 
