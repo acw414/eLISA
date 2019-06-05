@@ -1,8 +1,16 @@
 # Vignette ReadMe
 
+This Vignette directory contains 
+- Instructions for how to run a sample dataset (listed below)
+- An example eDNA dataset in the format required for eLISA to work - sampleinput_Fish_taxonomy_file.txt
+- An example output file - results.csv
+- An example of the temporary files created by eLISA
+   - These contain all the species present in each eDNA sample, with repeats and empty lines ommitted 
+   - Please note these temporary files are deleted by eLISA and will not be produced in a typical run. They are included in the Vignette to show the intermediary steps eLISA goes through in file processing.
+
 ## Running eLISA with an example dataset   
 
-This document will walk through the steps for running an example dataset through eLISA. 
+This document will now walk through the steps for running an example dataset through eLISA. 
 
 1) The user should first **install the [originr package](https://github.com/ropensci/originr)** in R.
    - Log into the UCLA Hoffman2 server and type:
