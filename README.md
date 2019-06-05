@@ -74,8 +74,7 @@ _______________
   - DEPENDENCIES: requirements that the user needs on the bioinformatics end     
     - must be on UCLA's Hoffman2   
     - must have originr installed beforehand on R (+ instructions of how to install it on Hoffman2)    
-    - say what part of origin r we are using : which functions/features. which databases do they analyze? what info do these databases have?
-    - can be the same as the readme bits in the vignette?            
+    - say what part of origin r we are using : which functions/features. which databases do they analyze? what info do these databases have?         
   - say this only works for US within inland range 
   - add more comments in the code itself 
   - make our DOI + include how to cite us 
