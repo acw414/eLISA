@@ -106,4 +106,6 @@ _______________
 **PROJECT TO DO LIST**   
   - add more comments in the code itself 
   - make our DOI + include how to cite us 
+  - write about how 3 scripts: masterscript joins them
+  - change script to allow location input?
 
