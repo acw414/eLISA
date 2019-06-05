@@ -74,9 +74,21 @@ eLISA produces text file named *results.csv* which contains a table. This table 
 
 ![alt text](https://github.com/sohil2710/spring2019_-/blob/master/Screen%20Shot%202019-06-05%20at%2012.08.22%20AM.png)
 
-We recommend the user to open results.csv with Mircosoft Excel or [R studio](https://www.rstudio.com/) by doing the following:
+In order to see the results in a clear and tabular form, we recommend the user to open results.csv with Mircosoft Excel or [R studio](https://www.rstudio.com/) by doing the following:
 
-![alt text](https://github.com/sohil2710/spring2019_-/blob/master/Screen%20Shot%202019-06-05%20at%2012.18.08%20AM.png)
+![alt text](https://github.com/sohil2710/spring2019_-/blob/master/Screen%20Shot%202019-06-05%20at%2012.29.01%20AM.png)
+
+Here is what *results.csv* looks like in Excel:
+
+![alt text](https://github.com/sohil2710/spring2019_-/blob/master/Screen%20Shot%202019-06-05%20at%2012.40.38%20AM.png)
+
+**UCLA Hoffman users**: In order to view the file in with another software like Excel, the user must copy the file on to their computer before proceeding with the instructions above. Remember to do this by typing:
+```
+scp c177-23@hoffman2.idre.ucla.edu:/u/home/class/c177/c177-xx/eLISA/results.csv *path to location on your computer*
+```
+Remember to replace the part after 'scp' with your own login and path to results on Hoffman.
+
+
 
 ## References
 
@@ -92,7 +104,6 @@ Scott Chamberlain and Ignasi Bartomeus (2018). originr: Fetch Species
 _______________
 
 **PROJECT TO DO LIST**   
-  - EXPECTED OUTPUT section
   - add more comments in the code itself 
   - make our DOI + include how to cite us 
     
