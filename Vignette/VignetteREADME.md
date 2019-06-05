@@ -2,9 +2,9 @@
 
 This Vignette directory contains 
 - Instructions for how to run a sample dataset (listed below)
-- An example eDNA dataset in the format required for eLISA to work - sampleinput_Fish_taxonomy_file.txt
-- An example output file - results.csv
-- An example of the temporary files created by eLISA - finalsamplecolumn1.txt finalsamplecolumn2.txt  
+- An example eDNA dataset in the format required for eLISA to work - *sampleinput_Fish_taxonomy_file.txt*
+- An example output file - *results.csv*
+- An example of the temporary files created by eLISA - *finalsamplecolumn1.txt finalsamplecolumn2.txt*  
    - These contain all the species present in each eDNA sample, with repeats and empty lines ommitted 
    - Please note these temporary files are deleted by eLISA and will not be produced in a typical run. They are only included in the Vignette to show the intermediary steps eLISA goes through in file processing.
 
