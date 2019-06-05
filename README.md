@@ -68,7 +68,7 @@ There are a number of **requirements for the input file** that, if not met, coul
 - The name of the input file cannot have the string "column" in it   
 
 
-## Expected output
+## Expected Output
 
 eLISA produces a text file named *results.csv* which contains a table. This table has 5 columns - Sample(name of the sample), Count(total species), Invasive(# of invasive species), Percentage(% of invasive species), and Invasive_Species(list of invasive species). The number of rows in the result depends on the number of samples in the input eDNA file. Here is what *results.csv* looks like in terminal:
 
