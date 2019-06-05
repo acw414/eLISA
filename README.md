@@ -9,14 +9,14 @@ eDNA can therefore identify any species that have passed through a particular en
 
 eDNA analysis can also track the spread of invasive species; species which have been introduced, either intentionally or unintentionally, to a region outside their natural range and have subsequently caused harm to this new habitat. This is a worthwhile field of study as population booms of invasive species could threaten native species, [disrupt ecosystem functions](https://www.environmentalscience.org/invasive-species), and even cause [millions of dollars worth of damage](https://2001-2009.state.gov/g/oes/ocns/inv/cs/2304.htm). However, eDNA analyses can identify hundreds of unique DNA reads per sample, and verifying each unique species in invasive species databases would be monotonous and time-consuming.   
 
-eLISA is designed to aid in this laborious task. The program takes the output of an eDNA analysis, searches through the Global Invasive Species Database, and provides the user with a sample-by-sample breakdown of the identified invasive species. The program is only set to check for species that are invasive within the US inland range. The authors are currently working on adding an option for the user to chose which country the program will check invasiveness for. eLISA is meant to make eDNA analysis as convenient as possible, and can identify the invasive species in a table of hundreds in a matter of minutes.   
+eLISA is designed to aid in this laborious task. The program takes the output of an eDNA analysis, searches through the Global Invasive Species Database, and provides the user with a sample-by-sample breakdown of the identified invasive species. The *program is only set to check for species that are invasive within the US inland range*. The authors are currently working on adding an option for the user to chose which country the program will check invasiveness for. eLISA is meant to make eDNA analysis as convenient as possible, and can identify the invasive species in a table of hundreds in a matter of minutes.   
 
 
 ## Program Workflow 
 
-The user provides a .txt file containing eDNA sample reads and taxonomic data as an input, and eLISA will extract the species present at each sample site, check them against invasive species databases using originr, and output a file detailing the invasive species in each sample. 
-
 eLISA is comprised of a Python script (***Python_eLISA.py***), which sorts through the file and extracts species names, and an R script (***R_eLISA.r***), which searches the Global Invasive Species Database and creates the output. These two scripts are run by using the bash masterscript (***eLISA.sh***).
+
+The user provides a .txt file containing eDNA sample reads and taxonomic data as an input, and eLISA will determine the species present in each sample site, check them against invasive species databases using originr, and output is a file detailing the invasive species in each sample. 
 
 ![alt text](https://github.com/acw414/eLISA/blob/master/project_workflow.jpg "Program Workflow")   
 
@@ -57,7 +57,7 @@ There are a number of **requirements for the input file** that, if not met, coul
 
 ## Instructions 
 
-1) If the user is **running eLISA for the first time**, they should start by installing the originr package by following the instructions under the **Dependencies** section. Skip this step if originr is already installed.   
+1) If the user is running eLISA for the first time, they should first **install the originr package** by following the instructions under the **Dependencies** section. Skip this step if originr is already installed.   
 
 2) The user can **clone the eLISA repository to Hoffman2** by typing the following into the command line:
 ```
