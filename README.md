@@ -44,7 +44,14 @@ quit()
 ```
 module load R
 ```
-Please follow the instructions above in order to install the originr package and then quit R. 
+Please follow the instructions above in order to install the originr package and then quit R.    
+
+There are a number of **requirements for the input file** that, if not met, could impact eLISA's performance:
+- The file must be a .txt file of eDNA sample reads and taxonomic data (see /Vignette/sampleinput_Fish_taxonomy_file.txt for an example)  
+- The file must be organized into columns 
+- The taxonomic data in the final column must use semicolons (;) to seperate taxonomic ranks  
+- The name of the input file cannot have the string "column" in it    
+
 
 
 ## Instructions 
@@ -62,13 +69,6 @@ into Hoffman2. This should make a copy of this repository.
 sh eLISA.sh inputfile.txt
 ```
 where inputfile.txt is the name of the user's own input file.
-
-There are a number of **requirements for the input file** that, if not met, could impact eLISA's performance:
-- The file must be a .txt file of eDNA sample reads and taxonomic data (see /Vignette/sampleinput_Fish_taxonomy_file.txt for an example)  
-- The file must be organized into columns 
-- The taxonomic data in the final column must use semicolons (;) to seperate taxonomic ranks  
-- The name of the input file cannot have the string "column" in it   
-
 
 ## Expected Output
 
