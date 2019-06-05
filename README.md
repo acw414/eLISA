@@ -42,7 +42,7 @@ Please give the system 10-15 minutes for this installation. Please do not close 
 ```
 quit()
 ```
-<u>**UCLA Hoffman users only**</u> : Python and R are already installed on the server, but must be loaded. After retrieving a compute node, the user must type the following into the command line in order to **load R**:
+**__UCLA Hoffman users only__** : Python and R are already installed on the server, but must be loaded. After retrieving a compute node, the user must type the following into the command line in order to **load R**:
 ```
 module load R
 ```
