@@ -44,8 +44,8 @@ _______________
 
 **PROJECT TO DO LIST**   
   - requirements that the user needs on the bioinformatics end - in the dependencies section    
-    - must have originr installed beforehand on R    
-    - must be on Hoffman2   
+    - must be on UCLA's Hoffman2   
+    - must have originr installed beforehand on R (+ instructions of how to install it on Hoffman2)    
   - add more comments in the code itself         
   - need a section saying all the requirement for the input file .    
     - say the input file cannot have the string "column" in the filename   
