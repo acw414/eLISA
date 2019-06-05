@@ -13,11 +13,12 @@ Steps for running the program:
         > install.packages("originr")
        ```
    - The package may take up to 10 minutes to install, please do not close R or the terminal window.
-   - After the user has installed originr once, they do not need to do so again and can skip this step.
    - Then the user should then close R:
        ```
        quit()
        ```
+   - This step can be skipped if the user already has originr installed on their terminal. 
+   
 2) The user can **clone the eLISA directory to Hoffman2** by typing the following into the command line:
    ```
    git clone https://github.com/acw414/eLISA.git
