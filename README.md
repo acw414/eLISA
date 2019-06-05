@@ -14,6 +14,8 @@ eLISA is designed to aid in this laborious task. The program takes the output of
 
 ### Program Workflow 
 
+The user provides a .txt file containing eDNA sample reads and taxonomic data as an input, and eLISA goes through the file in the following ways:  
+
 ![alt text](https://github.com/acw414/eLISA/blob/master/project_workflow.jpg "Program Workflow")   
 
 ### Dependencies
