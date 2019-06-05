@@ -31,9 +31,9 @@ This document will now walk through the steps for running an example dataset thr
    git clone https://github.com/acw414/eLISA.git
    ```
 
-3) To run the sample data set the user should **copy** sampleinput_Fish_taxonomy_file.txt from eLISA/Vignette to the main eLISA directory
+3) To run the sample data set the user should **copy** sampleinput_Fish_taxonomy_file.txt **from eLISA/Vignette to eLISA/Scripts**
 
-4) Finally, the user needs to **navigate to the main eLISA directory** and type into the command line:
+4) Finally, the user needs to **navigate to the eLISA/Scripts directory** and type into the command line:
    ```
    sh eLISA.sh sampleinput_Fish_taxonomy_file.txt
    ```
