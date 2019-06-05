@@ -107,5 +107,6 @@ _______________
   - add more comments in the code itself 
   - make our DOI + include how to cite us 
   - write about how 3 scripts: masterscript joins them
+    - add to flowchart maybe too?
   - change script to allow location input?
 
