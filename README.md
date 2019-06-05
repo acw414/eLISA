@@ -30,11 +30,11 @@ eLISA requires the use of Python(3 and above) and R. If your computer or server 
 
 Additionally, eLISA uses the R package - [originr](https://github.com/ropensci/originr) to query the [Global Invasive Species Database](http://www.iucngisd.org/gisd/). This program only uses the [*gisd(sp)*](https://github.com/ropensci/originr/blob/master/R/gisd.R) function for access to the aformentioned database.
 
-**First time users** must install this package in R. Go to your command line and type 'R' to load the program. Once you are given the prompt type:
+**First time users** must install this package in R. Go to your command line and type 'R' to load the R. Once you are given the prompt type:
 ```
 install.packages("originr")
 ```
-Please give the system 10-15 minutes for this install. Please do not close your terminal or disconnect internet until the installation is complete and you see the prompt from R again. Proceed to quit R by typing:
+Please give the system 10-15 minutes for this install. Please do not close your terminal or disconnect from the internet until the installation is complete and you see the prompt from R again. Proceed to quit R by typing:
 ```
 quit()
 ```
@@ -87,7 +87,6 @@ _______________
 
 **PROJECT TO DO LIST**   
   - EXPECTED OUTPUT section
-  - say this only works for US within inland range 
   - add more comments in the code itself 
   - make our DOI + include how to cite us 
     
