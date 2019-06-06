@@ -113,4 +113,8 @@ _______________
     - add to flowchart maybe too?
   - change script to allow location input?
   - add Python, R and Emily+Daniel? to references
-
+  - change readme
+  - change scripts
+  - change error message in eLISA
+  - add file of list of country names
+  - add error message if they misspell a country
