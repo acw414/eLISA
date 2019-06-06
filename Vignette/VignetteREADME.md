@@ -35,5 +35,6 @@ This document will now walk through the steps for running an example dataset thr
 
 4) Finally, the user needs to **navigate to the eLISA/Scripts directory** and type into the command line:
    ```
-   sh eLISA.sh sampleinput_Fish_taxonomy_file.txt
+   sh eLISA.sh sampleinput_Fish_taxonomy_file.txt "united states"
    ```
+   - The user must use the correct spelling and name of the country of choice. Please use quotation marks around the name to avoid confusion with space sperated country names
