@@ -7,7 +7,7 @@ This project primarily uses data from [Environmental DNA](https://www.sciencedir
 
 eDNA can therefore identify any species that have passed through a particular environment based on the fragments of DNA they leave behind. This is more efficient than typical mark-release-recapture methods, and can provide scientists with quantitative data that can aid in large-scale metapopulation analyses.   
 
-eDNA analysis can also track the spread of invasive species; species which have been introduced, either intentionally or unintentionally, to a region outside their natural range and have subsequently caused harm to this new habitat. This is a worthwhile field of study as population booms of invasive species could threaten native species, [disrupt ecosystem functions](https://www.environmentalscience.org/invasive-species), and even cause [millions of dollars worth of damage](https://2001-2009.state.gov/g/oes/ocns/inv/cs/2304.htm). However, eDNA analyses can identify hundreds of unique DNA reads per sample, and verifying each unique species in invasive species databases would be monotonous and time-consuming.   
+eDNA analysis can also track the spread of invasive species; species which have been introduced, either intentionally or unintentionally, to a region outside their natural range and have subsequently caused harm to this new habitat. This is a worthwhile field of study as population booms of invasive species could [threaten native species](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2745.2009.01480.x), [disrupt ecosystem functions](https://www.environmentalscience.org/invasive-species), and even cause [millions of dollars worth of damage](http://www.seagrant.umn.edu/ais/zebramussels_threaten). However, eDNA analyses can identify hundreds of unique DNA reads per sample, and verifying each unique species in invasive species databases would be monotonous and time-consuming.   
 
 eLISA is designed to aid in this laborious task. The program takes the output of an eDNA analysis, searches through the Global Invasive Species Database, and provides the user with a sample-by-sample breakdown of the region-specific invasive species.  eLISA is meant to make eDNA analysis as convenient as possible, and can identify the invasive species in a table of hundreds in a matter of minutes.   
 
@@ -93,18 +93,27 @@ Remember to replace the part after 'scp' with your own login and the path to res
 
 ## References
 
+Biomeme. (2018). A Guide to Environmental DNA (eDNA) by Biomeme. Retrieved June 6, 2019, from https://biomeme.com/environmental-dna/
+
+Hejda, M. , Pyšek, P. and Jarošík, V. (2009), Impact of invasive plants on the species richness, diversity and composition of   invaded communities. Journal of Ecology, 97: 393-403. doi:10.1111/j.1365-2745.2009.01480.x
+
+Hill, J. (2015, February 23). Invasive Species: How They Affect the Environment. Retrieved June 6, 2019, from                 https://www.environmentalscience.org/invasive-species
+
+Minnesota Sea Grant. (2017, March 30). Zebra Mussels Threaten Inland Waters. Retrieved June 6, 2019, from   http://www.seagrant.umn.edu/ais/zebramussels_threaten
+
+Python Software Foundation. Python Language Reference, version 3. URL http://www.python.org
+
+R Core Team (2014). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna,     Austria. URL http://www.R-project.org/.
+
 Scott Chamberlain and Ignasi Bartomeus (2018). originr: Fetch Species  
   Origin Data from the Web. R package version 0.3.0.
   https://CRAN.R-project.org/package=originr
-  
-Python -  https://www.python.org/
 
-R Programming - https://cran.r-project.org/
+Thomsen, P. F. (2014, December 18). Environmental DNA – An emerging tool in conservation for monitoring past and present biodiversity. Retrieved June 6, 2019, from https://www.sciencedirect.com/science/article/pii/S0006320714004443
 
 ## Acknowledgements
 
 We would like to thank **Dr. Emily Curd and Daniel Chavez at UCLA** for the inspiration for this project. Their continued support and guidance over 10 weeks introduced us to bioinformatics and made this project possible.
-
 
 
 _______________
