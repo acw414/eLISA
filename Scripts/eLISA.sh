@@ -3,19 +3,19 @@
 #This is the main script for eLISA
 #It runs the Python code and then the R code
 #It takes the file to be analyzed as the input
-#Usage = sh eLISA.sh inputfile.txt
+#Usage = sh eLISA.sh inputfile.txt "country"
 
 inputerror=".........
 WARNING: INPUT ERROR.
 eLISA requires one input - the name of your input file.
 Example usage:
-	sh eLISA.sh inputfile.txt
+	sh eLISA.sh inputfile.txt "country"
 Please check input and try again
 ........."
 
 . /u/local/Modules/default/init/modules.sh
 
-if [ "$#" != "1" ]; then
+if [ "$#" != "2" ]; then
         echo "$inputerror"
 else
     	module load python/3.1
@@ -27,7 +27,7 @@ else
         echo "Searching species database"
         echo "........."
         module load R/3.4.0
-        Rscript ./R_eLISA.r
+        Rscript ./R_eLISA.r $2
         echo "........."
         echo "Finalizing output"
 	rm ./finalsamplecolumn*.txt
