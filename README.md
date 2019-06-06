@@ -30,7 +30,7 @@ The user provides two inputs: a .txt file containing eDNA sample reads and the c
 
 eLISA runs on **UCLA's Hoffman2 Cluster**, and requires the use of **Python**(3 or above) and **R**. If your computer or server does not have [Python](https://www.python.org/downloads/) and [R](https://cran.r-project.org/mirrors.html) dowloaded, then please click the link embeded.
 
-**__First time users__** must **install [originr]**(https://github.com/ropensci/originr) in R before running eLISA, which can be done in the command line by typing: 
+**First time users must install** [**originr**](https://github.com/ropensci/originr) in R before running eLISA. This can be done in the command line by typing: 
 ```
 module load R
 R
