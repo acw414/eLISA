@@ -10,7 +10,7 @@ WARNING: INPUT ERROR.
 eLISA requires two inputs - the name of your input file and the country the samples were collected from in quotation marks.
 Example usage:
 	sh eLISA.sh inputfile.txt "united states"
-Please check input and try again
+Please check inputs and try again
 ........."
 
 . /u/local/Modules/default/init/modules.sh
