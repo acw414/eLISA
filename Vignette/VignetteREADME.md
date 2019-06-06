@@ -37,4 +37,4 @@ This document will now walk through the steps for running an example dataset thr
    ```
    sh eLISA.sh sampleinput_Fish_taxonomy_file.txt "united states"
    ```
-   - **Note**: The user must use the correct spelling and name of the country of choice. Please use quotation marks around the name to avoid confusion with space sperated country names. Incorrect spelling of countries will still create *results.csv* but it will show 0 invasive species. Please be aware it is also possible your dataset has 0 invasive species. 
+   - **Note**: The country name must have quotation marks around it.
