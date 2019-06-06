@@ -18,7 +18,7 @@ eLISA is comprised of a Python script (***Python_eLISA.py***), which sorts throu
 
 The user provides a .txt file containing eDNA sample reads and taxonomic data as an input, and eLISA will determine the species present in each sample site, check them against invasive species databases using originr, and output is a file detailing the invasive species in each sample. 
 
-![alt text](https://github.com/acw414/eLISA/blob/master/eLISAflowchart.jpg "Program Workflow")   
+![alt text](https://github.com/acw414/eLISA/blob/master/workflow.jpg "Program Workflow")   
 
 **eLISA will list a number of status messages while completing tasks:**
 - *Sorting input file* will be shown as eLISA goes through the input file and creates a temporary file per sample
