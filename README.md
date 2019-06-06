@@ -106,7 +106,7 @@ R Programming - https://cran.r-project.org/
 
 ## Acknowledgements
 
-We would like to thank Dr. Emily Curd and Daniel Chavez at UCLA for the inspiration for this project. Thier continued support and guidence over 10 weeks introduced us to bioinformatics and made this project possible.
+We would like to thank **Dr. Emily Curd and Daniel Chavez at UCLA** for the inspiration for this project. Thier continued support and guidence over 10 weeks introduced us to bioinformatics and made this project possible.
 
 
 
