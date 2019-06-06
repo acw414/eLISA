@@ -2,7 +2,7 @@
 
 #This is the main script for eLISA
 #It runs the Python code and then the R code
-#It takes the file to be analyzed as the input
+#It takes the file to be analyzed and the country name as the inputs
 #Usage = sh eLISA.sh inputfile.txt "country"
 
 inputerror=".........
