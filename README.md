@@ -9,7 +9,7 @@ eDNA can therefore identify any species that have passed through a particular en
 
 eDNA analysis can also track the spread of invasive species; species which have been introduced, either intentionally or unintentionally, to a region outside their natural range and have subsequently caused harm to this new habitat. This is a worthwhile field of study as population booms of invasive species could threaten native species, [disrupt ecosystem functions](https://www.environmentalscience.org/invasive-species), and even cause [millions of dollars worth of damage](https://2001-2009.state.gov/g/oes/ocns/inv/cs/2304.htm). However, eDNA analyses can identify hundreds of unique DNA reads per sample, and verifying each unique species in invasive species databases would be monotonous and time-consuming.   
 
-eLISA is designed to aid in this laborious task. The program takes the output of an eDNA analysis, searches through the Global Invasive Species Database, and provides the user with a sample-by-sample breakdown of the identified invasive species. The *program is only set to check for species that are invasive within the US inland range*. The authors are currently working on adding an option for the user to chose which country the program will check invasiveness for. eLISA is meant to make eDNA analysis as convenient as possible, and can identify the invasive species in a table of hundreds in a matter of minutes.   
+eLISA is designed to aid in this laborious task. The program takes the output of an eDNA analysis, searches through the Global Invasive Species Database, and provides the user with a sample-by-sample breakdown of the region-specific invasive species.  eLISA is meant to make eDNA analysis as convenient as possible, and can identify the invasive species in a table of hundreds in a matter of minutes.   
 
 
 ## Program Workflow 
@@ -28,7 +28,7 @@ The user provides two inputs: a .txt file containing eDNA sample reads and the c
   
 ## Dependencies
 
-eLISA runs on **UCLA's Hoffman2 Cluster**, and requires the use of **Python**(3 or above) and **R**. If your computer or server does not have [Python](https://www.python.org/downloads/) and [R](https://cran.r-project.org/mirrors.html) dowloaded, then please click the link embeded.
+eLISA runs best on **UCLA's Hoffman2 Cluster**, and requires the use of **Python**(3 or above) and **R**. If you do not have access to Hoffman2, you can run eLISA on your terminal as long as you have downloaded [Python](https://www.python.org/downloads/) and [R](https://cran.r-project.org/mirrors.html).
 
 **First time users must install** [**originr**](https://github.com/ropensci/originr) in R before running eLISA. This can be done in the command line by typing: 
 ```
@@ -42,7 +42,7 @@ quit()
 ```
 You are now ready to run eLISA.
 
-There are also a number of **requirements for the input file** that, if not met, could impact eLISA's performance:
+There are a number of **requirements for the input file** that, if not met, could impact eLISA's performance:
 - The file must be a .txt file of eDNA sample reads and taxonomic data (see /Vignette/sampleinput_Fish_taxonomy_file.txt for an example)  
 - The file must be organized into columns 
 - The taxonomic data in the final column must use semicolons (;) to seperate taxonomic ranks  
@@ -75,7 +75,7 @@ There are also a number of **requirements for the input file** that, if not met,
 
 ## Expected Output
 
-eLISA produces a text file named *results.csv* which contains a table. This table has 5 columns - Sample(name of the sample), Count(total species), Invasive(# of invasive species), Percentage(% of invasive species), and Invasive_Species(list of invasive species). The number of rows in the result depends on the number of samples in the input eDNA file. Here is what *results.csv* looks like in terminal:
+eLISA produces a text file named *results.csv* which contains a table. This table has 5 columns - Sample(name of the sample), Count(total species), Invasive(number of invasive species), Percentage(number of invasive species as a percent of total species), and Invasive_Species(list of invasive species). The number of rows in the result depends on the number of samples in the input eDNA file. Here is what *results.csv* looks like in terminal:
 
 ![alt text](https://github.com/sohil2710/spring2019_-/blob/master/Screen%20Shot%202019-06-05%20at%2012.08.22%20AM.png)
 
@@ -90,8 +90,6 @@ Here is what the file looks like in Excel:
 scp c177-xx@hoffman2.idre.ucla.edu:/u/home/class/c177/c177-xx/eLISA/Scripts/results.csv path_to_local_folder
 ```
 Remember to replace the part after 'scp' with your own login and the path to results.csv on Hoffman.
-
-
 
 ## References
 
