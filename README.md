@@ -71,7 +71,7 @@ There are also a number of **requirements for the input file** that, if not met,
   ```
 (where inputfile.txt is the name of the user's own input file)
 
-**Please note:** The user must use the correct name and spelling of the country of choice. **Use quotation marks* around the country name** to avoid confusion with names that include spaces. Incorrect spelling will still create *results.csv* but it will show 0% invasive species. Having 0% invasiveness could indicate a spelling error, but your dataset could also have 0 invasive species. 
+**Please note:** The user must use the correct name and spelling of the country of choice. **Use quotation marks around the country name** to avoid confusion with names that include spaces. Incorrect spelling will still create *results.csv* but it will show 0% invasive species. Having 0% invasiveness could indicate a spelling error, but your dataset could also have 0 invasive species. 
 
 ## Expected Output
 
@@ -106,7 +106,6 @@ R Programming - https://cran.r-project.org/
 ## Acknowledgements
 
 We would like to thank **Dr. Emily Curd and Daniel Chavez at UCLA** for the inspiration for this project. Their continued support and guidance over 10 weeks introduced us to bioinformatics and made this project possible.
-
 
 
 
