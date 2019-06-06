@@ -5,6 +5,8 @@
 
 library("originr")
 
+args<-commandArgs(TRUE)
+
 files <- list.files(path=".", pattern="finalsamplecolumn.*.txt", full.names=TRUE, recursive=FALSE)
 
 results <- data.frame()
@@ -16,7 +18,7 @@ for (file in files){
   for (species in t[,1]){
     presence <- gisd(species)
     if (is.null(presence[[1]]$status)){
-      if ("united states" %in% presence[[1]]$alien_range){
+      if (args[1] %in% presence[[1]]$alien_range){
         invasive <- invasive + 1
         invasive_species <- c(invasive_species, presence[[1]]$species)
       }
