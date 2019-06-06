@@ -1,9 +1,8 @@
 #install.packages("originr")
 
-#need to comment
-
+#load originr
 library("originr")
-
+#line 6 and 19 allow the user to input the country
 args<-commandArgs(TRUE)
 
 files <- list.files(path=".", pattern="finalsamplecolumn.*.txt", full.names=TRUE, recursive=FALSE)
