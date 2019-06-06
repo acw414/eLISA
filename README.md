@@ -16,7 +16,7 @@ eLISA is designed to aid in this laborious task. The program takes the output of
 
 eLISA is comprised of a Python script (***Python_eLISA.py***), which sorts through the file and extracts species names, and an R script (***R_eLISA.r***), which searches the Global Invasive Species Database and creates the output. These two scripts are run by using the bash masterscript (***eLISA.sh***).
 
-The user provides a .txt file containing eDNA sample reads and the country the sample was taken from as the inputs, and eLISA will determine the species present in each sample site, check them against invasive species databases using originr, and output is a file detailing the region-specific invasive species in each sample. 
+The user provides two inputs: a .txt file containing eDNA sample reads and the country where the samples were collected. eLISA will determine the species present in each sample site, and check them against the [Global Invasive Species Database](http://www.iucngisd.org/gisd/) using the [*gisd(sp)*](https://github.com/ropensci/originr/blob/master/R/gisd.R) function in **[originr]**(https://github.com/ropensci/originr). eLISA then outputs a file detailing the region-specific invasive species in each sample. 
 
 ![alt text](https://github.com/acw414/eLISA/blob/master/workflow.jpg "Program Workflow")   
 
@@ -28,11 +28,9 @@ The user provides a .txt file containing eDNA sample reads and the country the s
   
 ## Dependencies
 
-eLISA runs on **UCLA's Hoffman2 Cluster**, and requires the use of **Python**(3 or above) and **R**. If your computer or server does not have [Python](https://www.python.org/downloads/) and [R](https://cran.r-project.org/mirrors.html) dowloaded, then please click the link embeded. 
+eLISA runs on **UCLA's Hoffman2 Cluster**, and requires the use of **Python**(3 or above) and **R**. If your computer or server does not have [Python](https://www.python.org/downloads/) and [R](https://cran.r-project.org/mirrors.html) dowloaded, then please click the link embeded.
 
-Additionally, eLISA uses the **[originr]**(https://github.com/ropensci/originr) R package to query the [Global Invasive Species Database](http://www.iucngisd.org/gisd/). This program uses the [*gisd(sp)*](https://github.com/ropensci/originr/blob/master/R/gisd.R) function for access to the aformentioned database.
-
-**__First time users__** must **install originr** package in R, which can be done in the command line by typing: 
+**__First time users__** must **install [originr]**(https://github.com/ropensci/originr) in R before running eLISA, which can be done in the command line by typing: 
 ```
 module load R
 R
@@ -42,13 +40,9 @@ R
 ```
 quit()
 ```
-**__UCLA Hoffman users only__** : Python and R are already installed on the server, but must be loaded. After retrieving a compute node, the user must type the following into the command line in order to **load R**:
-```
-module load R
-```
-Please follow the instructions above in order to install the originr package and then quit R.    
+You are now ready to run eLISA.
 
-There are a number of **requirements for the input file** that, if not met, could impact eLISA's performance:
+There are also a number of **requirements for the input file** that, if not met, could impact eLISA's performance:
 - The file must be a .txt file of eDNA sample reads and taxonomic data (see /Vignette/sampleinput_Fish_taxonomy_file.txt for an example)  
 - The file must be organized into columns 
 - The taxonomic data in the final column must use semicolons (;) to seperate taxonomic ranks  
@@ -64,9 +58,14 @@ There are a number of **requirements for the input file** that, if not met, coul
 git clone https://github.com/acw414/eLISA.git
 ```
 
-3) eLISA will only work if the input file and scripts are all in the same directory. Therefore the user should then **copy their input file into eLISA/Scripts**
+3) The user should then **load R** by typing
+```
+module load R
+```
 
-4) **To run eLISA**, the user should **navigate into the eLISA/Scripts directory** then type:  
+4) eLISA will only work if the input file and scripts are all in the same directory. Therefore the user should then **copy their input file into eLISA/Scripts**
+
+5) **To run eLISA**, the user should **navigate into the eLISA/Scripts directory** then type:  
 ```
 sh eLISA.sh inputfile.txt "Country the samples were collected from"
 ```
