@@ -16,7 +16,7 @@ eLISA is designed to aid in this laborious task. The program takes the output of
 
 eLISA is comprised of a Python script (***Python_eLISA.py***), which sorts through the file and extracts species names, and an R script (***R_eLISA.r***), which searches the Global Invasive Species Database and creates the output. These two scripts are run by using the bash masterscript (***eLISA.sh***).
 
-The user provides a .txt file containing eDNA sample reads and taxonomic data as an input, and eLISA will determine the species present in each sample site, check them against invasive species databases using originr, and output is a file detailing the invasive species in each sample. 
+The user provides a .txt file containing eDNA sample reads and the country the sample was taken from as the inputs, and eLISA will determine the species present in each sample site, check them against invasive species databases using originr, and output is a file detailing the region-specific invasive species in each sample. 
 
 ![alt text](https://github.com/acw414/eLISA/blob/master/workflow.jpg "Program Workflow")   
 
@@ -28,9 +28,9 @@ The user provides a .txt file containing eDNA sample reads and taxonomic data as
   
 ## Dependencies
 
-eLISA runs on UCLA's Hoffman2 Cluster, and requires the use of Python(3 or above) and R. If your computer or server does not have [Python](https://www.python.org/downloads/) and [R](https://cran.r-project.org/mirrors.html) dowloaded, then please click the link embeded. 
+eLISA runs on **UCLA's Hoffman2 Cluster**, and requires the use of **Python**(3 or above) and **R**. If your computer or server does not have [Python](https://www.python.org/downloads/) and [R](https://cran.r-project.org/mirrors.html) dowloaded, then please click the link embeded. 
 
-Additionally, eLISA uses the [originr](https://github.com/ropensci/originr) R package to query the [Global Invasive Species Database](http://www.iucngisd.org/gisd/). This program only uses the [*gisd(sp)*](https://github.com/ropensci/originr/blob/master/R/gisd.R) function for access to the aformentioned database.
+Additionally, eLISA uses the **[originr]**(https://github.com/ropensci/originr) R package to query the [Global Invasive Species Database](http://www.iucngisd.org/gisd/). This program uses the [*gisd(sp)*](https://github.com/ropensci/originr/blob/master/R/gisd.R) function for access to the aformentioned database.
 
 **__First time users__** must **install originr** package in R, which can be done in the command line by typing: 
 ```
@@ -38,7 +38,7 @@ module load R
 R
   > install.packages("originr")
 ```
-Please give the system 10-15 minutes for this installation. Please do not close your terminal or disconnect from the internet until installation is complete and you see the prompt from R again. Proceed to quit R by typing:
+*Please give the system 10-15 minutes for this installation.* Please do not close your terminal or disconnect from the internet until installation is complete and you see the prompt from R again. Proceed to quit R by typing:
 ```
 quit()
 ```
@@ -68,9 +68,11 @@ git clone https://github.com/acw414/eLISA.git
 
 4) **To run eLISA**, the user should **navigate into the eLISA/Scripts directory** then type:  
 ```
-sh eLISA.sh inputfile.txt
+sh eLISA.sh inputfile.txt "Country the samples were collected from"
 ```
 (where inputfile.txt is the name of the user's own input file)
+
+The country name must have quotation marks around it. 
 
 
 ## Expected Output
@@ -113,8 +115,4 @@ _______________
     - add to flowchart maybe too?
   - change script to allow location input?
   - add Python, R and Emily+Daniel? to references
-  - change readme
-  - change scripts
-  - change error message in eLISA
-  - add file of list of country names
-  - add error message if they misspell a country
+
