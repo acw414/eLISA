@@ -99,8 +99,14 @@ Remember to replace the part after 'scp' with your own login and the path to res
 Scott Chamberlain and Ignasi Bartomeus (2018). originr: Fetch Species  
   Origin Data from the Web. R package version 0.3.0.
   https://CRAN.R-project.org/package=originr
+  
+Python -  https://www.python.org/
 
+R Programming - https://cran.r-project.org/
 
+## Acknowledgements
+
+We would like to thank Dr. Emily Curd and Daniel Chavez at UCLA for the inspiration for this project. Thier continued support and guidence over 10 weeks introduced us to bioinformatics and made this project possible.
 
 
 
@@ -110,8 +116,5 @@ _______________
 **PROJECT TO DO LIST**   
   - add more comments in the code itself 
   - make our DOI + include how to cite us 
-  - write about how 3 scripts: masterscript joins them
-    - add to flowchart maybe too?
-  - change script to allow location input?
-  - add Python, R and Emily+Daniel? to references
+
 
