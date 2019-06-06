@@ -71,8 +71,7 @@ There are also a number of **requirements for the input file** that, if not met,
   ```
 (where inputfile.txt is the name of the user's own input file)
 
-The country name must have quotation marks around it. 
-
+**Please note:** The user must use the correct name and spelling of the country of choice. **Use quotation marks** around the name to avoid confusion with country names that include spaces. Incorrect spelling will still create *results.csv* but it will show 0% invasive species. Having 0% invasiveness could indicate a spelling error, but your dataset could also have 0 invasive species. 
 
 ## Expected Output
 
@@ -116,5 +115,3 @@ _______________
 **PROJECT TO DO LIST**   
   - add more comments in the code itself 
   - make our DOI + include how to cite us 
-
-
