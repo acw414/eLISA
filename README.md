@@ -112,3 +112,4 @@ _______________
 **PROJECT TO DO LIST**   
   - add more comments in the code itself 
   - make our DOI + include how to cite us 
+  - see if we can find a list of the countries accepted by gsid
