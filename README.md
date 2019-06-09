@@ -16,7 +16,7 @@ eLISA is designed to aid in this laborious task. The program takes the output of
 
 eLISA is comprised of a Python script (***Python_eLISA.py***), which sorts through the file and extracts species names, and an R script (***R_eLISA.r***), which dermines if the species are invasive and creates the output. These two scripts are run by using the bash masterscript (***eLISA.sh***).
 
-The user provides two inputs: a .txt file containing eDNA sample reads and the country where the samples were collected. eLISA will determine the species present in each sample site, and check them against the Global Invasive Species Database using the [*gisd(sp)*](https://github.com/ropensci/originr/blob/master/R/gisd.R) function in [**originr**](https://github.com/ropensci/originr). eLISA then outputs a file detailing the region-specific invasive species in each sample. 
+The user provides two inputs: a .txt file containing eDNA sample reads and the country where the samples were collected. eLISA will determine the species present in each sample site, and check them against the Global Invasive Species Database using the [*gisd()*](https://github.com/ropensci/originr/blob/master/R/gisd.R) function in [**originr**](https://github.com/ropensci/originr). eLISA then outputs a file detailing the region-specific invasive species in each sample. 
 
 ![alt text](https://github.com/acw414/eLISA/blob/master/workflow.jpg "Program Workflow")   
 
