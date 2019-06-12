@@ -93,23 +93,25 @@ Remember to replace the part after 'scp' with your own login and the path to res
 
 ## References
 
-Biomeme. (2018). A Guide to Environmental DNA (eDNA) by Biomeme. Retrieved June 6, 2019, from https://biomeme.com/environmental-dna/
+Biomeme. (2018). A Guide to Environmental DNA (eDNA) by Biomeme. Retrieved June 6 2019, from https://biomeme.com/environmental-dna/
 
 Hejda, M. , Pyšek, P. and Jarošík, V. (2009), Impact of invasive plants on the species richness, diversity and composition of   invaded communities. Journal of Ecology, 97: 393-403. doi:10.1111/j.1365-2745.2009.01480.x
 
-Hill, J. (2015, February 23). Invasive Species: How They Affect the Environment. Retrieved June 6, 2019, from                 https://www.environmentalscience.org/invasive-species
+Hill, J. (2015, February 23). Invasive Species: How They Affect the Environment. Retrieved June 6 2019, from                 https://www.environmentalscience.org/invasive-species
 
-Minnesota Sea Grant. (2017, March 30). Zebra Mussels Threaten Inland Waters. Retrieved June 6, 2019, from   http://www.seagrant.umn.edu/ais/zebramussels_threaten
+Invasive Species Specialist Group ISSG. (2015). The Global Invasive Species Database. Version 2015.1 . Retrieved May 2 2019,      from <http://www.iucngisd.org/gisd/> 
 
-Python Software Foundation. Python Language Reference, version 3. URL http://www.python.org
+Minnesota Sea Grant. (2017, March 30). Zebra Mussels Threaten Inland Waters. Retrieved June 6 2019, from   http://www.seagrant.umn.edu/ais/zebramussels_threaten
 
-R Core Team (2014). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna,     Austria. URL http://www.R-project.org/.
+Python Software Foundation. Python Language Reference, version 3. http://www.python.org
+
+R Core Team (2014). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna,     Austria. http://www.R-project.org/.
 
 Scott Chamberlain and Ignasi Bartomeus (2018). originr: Fetch Species  
   Origin Data from the Web. R package version 0.3.0.
   https://CRAN.R-project.org/package=originr
 
-Thomsen, P. F. (2014, December 18). Environmental DNA – An emerging tool in conservation for monitoring past and present biodiversity. Retrieved June 6, 2019, from https://www.sciencedirect.com/science/article/pii/S0006320714004443
+Thomsen, P. F. (2014, December 18). Environmental DNA – An emerging tool in conservation for monitoring past and present biodiversity. Retrieved June 6 2019, from https://www.sciencedirect.com/science/article/pii/S0006320714004443
 
 ## Acknowledgements
 
@@ -122,4 +124,3 @@ _______________
   - add more comments in the code itself 
   - make our DOI + include how to cite us 
   - see if we can find a list of the countries accepted by gsid
-  - add GISD to the citations
