@@ -28,13 +28,13 @@ Please check input file and try again.
 inputfile = sys.argv[1]
 openfile = open(inputfile, "r")
 
-# Works out the number of samples in the file (the number of columns excluding the first and last ones)
+# Splits the header by tabs; counts the number of headers; counts the number of samples in the file
 
 with open(inputfile, "r") as f:
         h = f.readline()
         header = h.split("\t")
         headlen = len(header) 
-        colrange = range(1,headlen - 1) 
+        colrange = range(1,headlen - 1) # Works out the number of columns exluding the 1st and last (hence number of samples)
 
 masterlist = [0]
 
@@ -45,14 +45,14 @@ for x in colrange:
 
 # For each line with species data in the input file, if the column value is more than 0, the species name will be added to the end of the corresponding column header in the masterlist. 
 
-openfile.readline() #skips the 1st line
+openfile.readline() # Skips the 1st line (the header)
 for line in openfile:
         line = line.strip()
-        Col = line.split("\t")
-        if len(Col) == headlen:
+        Col = line.split("\t") 
+        if len(Col) == headlen: # Makes sure any samples without taxonomic data (samples with nothing in the last column) are skipped
                 for x in colrange:
                         if Col[x] != "0":
-                                if ';' not in line: #if taxonomic data in the last column is not seperated by semicolons, this will print an error message
+                                if ';' not in line: # If taxonomic data in the last column is not seperated by semicolons, this will print an error message
                                         print delimitererror
                                 else:
                                      	sp = line.split(';')[-1]
