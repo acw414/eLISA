@@ -4,9 +4,9 @@
 # It will output a file called finalsamplecolumn.txt per column, which will list all the species found in that sample with no repeats
 # Python_eLISA.py can be run by itself to produce these output files, but to analyse whether the species are invasive the user should run this through eLISA.sh
 
-#Independent usage = python Python_eLISA.py inputfile.txt
+# Independent usage = python Python_eLISA.py inputfile.txt
 
-#Intended usage = sh eLISA.sh inputfile.txt "country name"
+# Intended usage = sh eLISA.sh inputfile.txt "country name"
 
 # Imports the required functions to Hoffman
 
