@@ -23,7 +23,7 @@ for (file in files){
     presence <- gisd(species) #pass each species as an argument through the in-built originr function that checks GIS database
     # If the list the function prints does not contain the status "not in GISD"
     if (is.null(presence[[1]]$status)){
-      # And if the users inputed country is present in the alien range printed by the function:
+      # And if the user-input country is present in the alien range printed by the function:
       if (args[1] %in% presence[[1]]$alien_range){
         invasive <- invasive + 1 # then add a counter to number of invasive
         invasive_species <- c(invasive_species, presence[[1]]$species) #and append that species to the list 
