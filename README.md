@@ -116,7 +116,7 @@ Thomsen, P. F. (2014, December 18). Environmental DNA – An emerging tool in co
 
 ## Acknowledgements
 
-We would like to thank **Dr. Emily Curd and Daniel Chavez at UCLA** for the inspiration for this project. Their continued support and guidance over 10 weeks introduced us to bioinformatics and made this project possible.
+We would like to thank **Dr. Emily Curd and Daniel Chavez at UCLA** for the inspiration for this project. They introduced us to bioinformatics and their continued support and guidance over 10 weeks made this project possible.
 
 
 _______________
@@ -124,4 +124,3 @@ _______________
 **PROJECT TO DO LIST**   
   - add more comments in the code itself 
   - make our DOI + include how to cite us 
-  - see if we can find a list of the countries accepted by gsid
