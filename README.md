@@ -47,6 +47,7 @@ There are a number of **requirements for the input file** that, if not met, coul
 - The file must be organized into columns 
 - The taxonomic data in the final column must use semicolons (;) to seperate taxonomic ranks  
 - The name of the input file cannot have the string "column" in it    
+- All samples in the eDNA file must have been collected from the same country in order for invasive checks to work        
 
 
 ## Instructions 
