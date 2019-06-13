@@ -5,9 +5,8 @@
 # Intended usage = sh eLISA.sh inputfile.txt "country name"
 # Please make sure you have done - install.packages("originr")
 
-
 library("originr")
-#Lines 11 and 26 allow the user to input the country
+#Lines 10 and 25 allow the user to input the country
 args<-commandArgs(TRUE)
 #Make a list of all the files created by Python_eLISA.py
 files <- list.files(path=".", pattern="finalsamplecolumn.*.txt", full.names=TRUE, recursive=FALSE)
