@@ -1,8 +1,8 @@
 #!/usr/bin/python2
 
-#This script takes an eDNA output file (with columns of different locations and taxonomy information in the last one) and will extract the names of any species present
-#This script will output a file called finalsamplecolumn.txt per column, which will list all the species found in that sample, with no repeats
-#Python_eLISA.py can be run by itself to produce these output files, but to analyse whether the species are invasive the user should run this through eLISA.sh
+# This script takes an eDNA output file (with columns of different locations and taxonomy information in the last one) and will extract the names of any species present
+# It will output a file called finalsamplecolumn.txt per column, which will list all the species found in that sample with no repeats
+# Python_eLISA.py can be run by itself to produce these output files, but to analyse whether the species are invasive the user should run this through eLISA.sh
 
 #Independent usage = python Python_eLISA.py inputfile.txt
 
@@ -69,13 +69,11 @@ for i in colrange:
 
 path = os.listdir('.')
 
-# Replaces each semicolon in the masterlist with a new line
-
 for filename in path:
         if 'column' in filename:
                 outfile1 = str('sample') + filename
                 with open(filename, "r") as inn:
-                        sep =  inn.read().replace(';','\n') 
+                        sep =  inn.read().replace(';','\n') # Replaces each semicolon in the masterlist with a new line
                 with open(outfile1, "w+") as out:
                         out.write(sep)
                 unique = []
