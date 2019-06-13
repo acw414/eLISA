@@ -123,6 +123,5 @@ We would like to thank **Dr. Emily Curd and Daniel Chavez at UCLA** for the insp
 
 _______________
 
-**PROJECT TO DO LIST**   
-  - add more comments in the code itself 
+**PROJECT TO DO LIST**    
   - make our DOI + include how to cite us 
