@@ -3,39 +3,43 @@
 # Independent usage = Rscript ./R_eLISA.r "country name"
 # Intended usage = sh eLISA.sh inputfile.txt "country name"
 
-#install.packages("originr")
+# Please make sure you have done - install.packages("originr")
 
-#load originr
+# Load originr
 library("originr")
-#line 6 and 19 allow the user to input the country
+# Lines 11 and 27 allow the user to input the country
 args<-commandArgs(TRUE)
-
+# Make a list of all the files created by Python_eLISA.py
 files <- list.files(path=".", pattern="finalsamplecolumn.*.txt", full.names=TRUE, recursive=FALSE)
 
-results <- data.frame()
-
+results <- data.frame() #creates a data frame for results
+# For-loop through every file in the list
 for (file in files){
   t <- read.csv(file, header=TRUE, stringsAsFactors = F)
-  invasive <- 0
-  invasive_species <- c()
+  invasive <- 0 #sets the counter for number of invasive species per file
+  invasive_species <- c() #creates a vector for the list of invasive species names
+  # For-loop through every species per file
   for (species in t[,1]){
-    presence <- gisd(species)
+    presence <- gisd(species) #pass each species as an argument through the in-built originr function that checks GIS database
+    # If the list the function prints does not contain the status "not in GISD"
     if (is.null(presence[[1]]$status)){
+      # And if the users inputed country is present in the alien range printed by the function:
       if (args[1] %in% presence[[1]]$alien_range){
-        invasive <- invasive + 1
-        invasive_species <- c(invasive_species, presence[[1]]$species)
+        invasive <- invasive + 1 # then add a counter to number of invasive
+        invasive_species <- c(invasive_species, presence[[1]]$species) #and append that species to the list 
       }
     }
   }
+  # Makes a table: Takes sample name from the first row of each input file; counts the number of total species per file/sample; number of invasive per sample; invasive %; list of invasive
   current <- data.frame(Sample = colnames(t)[1], Count = nrow(t), 
                         Invasive = invasive, Percentage = paste(format(round((invasive/ nrow(t)*100), 4), nsmall = 4),"%"),
                         Invasive_species = paste(invasive_species, collapse = ', '))
   results <- rbind(results, current)
 }
-
+# Appends summary statistics to the bottom of the table
 summary <- data.frame(Sample='Total', Count = sum(results$Count), Invasive = sum(results$Invasive),
                       Percentage = paste(format(round((sum(results$Invasive)/sum(results$Count))*100, 4), nsmall = 4),"%"),
                       Invasive_species = '')
 results <- rbind(results, summary)
-
+# Adds the results table to a new file to output
 write.csv(results, 'results.csv', row.names = F)
