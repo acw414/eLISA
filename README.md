@@ -114,7 +114,9 @@ Scott Chamberlain and Ignasi Bartomeus (2018). originr: Fetch Species
 
 Thomsen, P. F. (2014, December 18). Environmental DNA – An emerging tool in conservation for monitoring past and present biodiversity. Retrieved June 6 2019, from https://www.sciencedirect.com/science/article/pii/S0006320714004443
 
-## Acknowledgements
+## Citing   
+
+## Acknowledgements   
 
 We would like to thank **Dr. Emily Curd and Daniel Chavez at UCLA** for the inspiration for this project. They introduced us to bioinformatics and their continued support and guidance over 10 weeks made this project possible.
 
