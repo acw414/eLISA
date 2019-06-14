@@ -121,8 +121,9 @@ Thomsen, P. F. (2014, December 18). Environmental DNA – An emerging tool in co
 Citation can be done using the doi: 10.5281/zenodo.3245523  
 
 *For example:*   
-  Weir, A., & Joshi, S. (2019, June 14). eLISA: eDNA List Invasive Species Analyzer (Version 1.0). Zenodo.                         https://doi.org/10.5281/zenodo.3245523  
+  Weir, A., & Joshi, S. (2019, June 14). eLISA: eDNA List Invasive Species Analyzer (Version 1.0). 
+    Zenodo. https://doi.org/10.5281/zenodo.3245523   
 
 ## Acknowledgements   
-
+ 
 We would like to thank **Dr. Emily Curd and Daniel Chavez at UCLA** for the inspiration for this project. They introduced us to bioinformatics and their continued support and guidance over 10 weeks made this project possible.
