@@ -118,7 +118,9 @@ Thomsen, P. F. (2014, December 18). Environmental DNA – An emerging tool in co
 
 ## Citing   
 
-Citation can be done in the following way:  
+Citation can be done using the doi: 10.5281/zenodo.3245523  
+
+For example, in MLA8: 
 
 Weir, A., & Joshi, S. (2019, June 14). eLISA: eDNA List Invasive Species Analyzer (Version v1.0). Zenodo. https://doi.org/10.5281/zenodo.3245523  
 
