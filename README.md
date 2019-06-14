@@ -1,8 +1,8 @@
 # eLISA
 
-## eDNA List Invasive Species Analyzer    
-[![DOI](https://zenodo.org/badge/184650042.svg)](https://zenodo.org/badge/latestdoi/184650042)   
+## eDNA List Invasive Species Analyzer      
 ***Written by Anna Weir (annacxweir@gmail.com) and Sohil Joshi (sohiljoshi.email@gmail.com)***   
+[![DOI](https://zenodo.org/badge/184650042.svg)](https://zenodo.org/badge/latestdoi/184650042)  
 
 This project primarily uses data from [Environmental DNA](https://www.sciencedirect.com/science/article/pii/S0006320714004443) (eDNA), which is the genetic material organisms shed into their surrounding environments, similar to how humans shed hair and skin cells throughout the day. This genetic material can be extracted by collecting samples of sediment or water, purifying DNA reads found in the samples, and then amplifying them through a technique known as [PCR](https://www.yourgenome.org/facts/what-is-pcr-polymerase-chain-reaction).     
 
@@ -117,7 +117,7 @@ Thomsen, P. F. (2014, December 18). Environmental DNA – An emerging tool in co
 
 ## Citing   
 
-Citation can be [![DOI](https://zenodo.org/badge/184650042.svg)](https://zenodo.org/badge/latestdoi/184650042)
+Citation can be done....
 
 ## Acknowledgements   
 
